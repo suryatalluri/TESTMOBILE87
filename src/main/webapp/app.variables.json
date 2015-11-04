@@ -5,6 +5,7 @@
 		"operation": "gotoPage",
 		"pageName": "Main",
 		"dataBinding": {},
+		"pageTransitions": "none",
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage-Main-wm.NavigationVariable1389180517517"
 	},
@@ -38,6 +39,7 @@
 		"operation": "gotoPage",
 		"pageName": "Device",
 		"dataBinding": {},
+		"pageTransitions": "none",
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_Device-wm.NavigationVariable-1443147834709"
 	},
@@ -47,6 +49,7 @@
 		"operation": "gotoPage",
 		"pageName": "AppInfo",
 		"dataBinding": {},
+		"pageTransitions": "none",
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_AppInfo-wm.NavigationVariable-1443148873989"
 	},
@@ -56,6 +59,7 @@
 		"operation": "gotoPage",
 		"pageName": "Contacts",
 		"dataBinding": {},
+		"pageTransitions": "none",
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_Contacts-wm.NavigationVariable-1443149019535"
 	},
@@ -65,6 +69,7 @@
 		"operation": "gotoPage",
 		"pageName": "Calendar",
 		"dataBinding": {},
+		"pageTransitions": "none",
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_Calendar-wm.NavigationVariable-1443149226000"
 	},
@@ -74,6 +79,7 @@
 		"operation": "gotoPage",
 		"pageName": "GeoLocation",
 		"dataBinding": {},
+		"pageTransitions": "none",
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_GeoLocation-wm.NavigationVariable-1443149348458"
 	},
@@ -83,6 +89,7 @@
 		"operation": "gotoPage",
 		"pageName": "CameraPictureVar",
 		"dataBinding": {},
+		"pageTransitions": "none",
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_CameraPictureVar-wm.NavigationVariable-1443149654664"
 	},
@@ -92,6 +99,7 @@
 		"operation": "gotoPage",
 		"pageName": "CaptureVideoVar",
 		"dataBinding": {},
+		"pageTransitions": "none",
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_CaptureVideoVar-wm.NavigationVariable-1443149766161"
 	},
@@ -101,6 +109,7 @@
 		"operation": "gotoPage",
 		"pageName": "scanBarcode",
 		"dataBinding": {},
+		"pageTransitions": "none",
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_scanBarcode-wm.NavigationVariable-1443150663980"
 	},
@@ -110,6 +119,7 @@
 		"operation": "gotoPage",
 		"pageName": "fileUploadVar",
 		"dataBinding": {},
+		"pageTransitions": "none",
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_fileUploadVar-wm.NavigationVariable-1443150797676"
 	},
@@ -167,6 +177,7 @@
 		"operation": "gotoPage",
 		"pageName": "segmented",
 		"dataBinding": {},
+		"pageTransitions": "none",
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_segmented-wm.NavigationVariable-1443174774472"
 	},
@@ -176,6 +187,7 @@
 		"operation": "gotoPage",
 		"pageName": "tabbar",
 		"dataBinding": {},
+		"pageTransitions": "none",
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_tabbar-wm.NavigationVariable-1443174867034"
 	},
@@ -185,6 +197,7 @@
 		"operation": "gotoPage",
 		"pageName": "mediaList",
 		"dataBinding": {},
+		"pageTransitions": "none",
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_mediaList-wm.NavigationVariable-1443174907356"
 	},
@@ -194,6 +207,7 @@
 		"operation": "gotoPage",
 		"pageName": "camearWid",
 		"dataBinding": {},
+		"pageTransitions": "none",
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_camearWid-wm.NavigationVariable-1443176369363"
 	},
@@ -203,6 +217,7 @@
 		"operation": "gotoPage",
 		"pageName": "captureVideoWid",
 		"dataBinding": {},
+		"pageTransitions": "none",
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_captureVideoWid-wm.NavigationVariable-1443176458310"
 	},
@@ -212,6 +227,7 @@
 		"operation": "gotoPage",
 		"pageName": "barcodeScan",
 		"dataBinding": {},
+		"pageTransitions": "none",
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_barcodeScan-wm.NavigationVariable-1443176572769"
 	},
@@ -221,6 +237,7 @@
 		"operation": "gotoPage",
 		"pageName": "dates",
 		"dataBinding": {},
+		"pageTransitions": "none",
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_dates-wm.NavigationVariable-1443176756965"
 	},
@@ -230,6 +247,7 @@
 		"operation": "gotoPage",
 		"pageName": "fileUploadWid",
 		"dataBinding": {},
+		"pageTransitions": "none",
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_fileUploadWid-wm.NavigationVariable-1443176975048"
 	},
@@ -455,7 +473,8 @@
 		"properties": [
 			"department",
 			"employeeByManagerid",
-			"employeesForManagerid"
+			"employeesForManagerid",
+			null
 		],
 		"relatedTables": [
 			{
@@ -475,6 +494,13 @@
 			{
 				"columnName": "employeeByManagerid",
 				"relationName": "employeesForManagerid",
+				"type": "Employee",
+				"package": "com.hrdb.Employee",
+				"watchOn": "HrdbEmployeeData"
+			},
+			{
+				"columnName": "employeeByManagerid",
+				"relationName": null,
 				"type": "Employee",
 				"package": "com.hrdb.Employee",
 				"watchOn": "HrdbEmployeeData"

@@ -4,7 +4,7 @@
     <description>
         An application to test mobile features
     </description>
-    <author email="srinivasa.boyina@wavemaker.com" href="">
+    <author email="surya.talluri@wavemaker.com" href="">
         
     </author>
     <content src="index.html"/>
@@ -12,66 +12,7 @@
     <access origin="https://*/*"/>
     <access origin="http://172.16.49.78:10080/run-d18v5xnccj/TESTMOBILE/*/*"/>
     <access origin="http://172.16.49.78:10080/run-d18v5xnccj/TESTMOBILE/*"/>
-    <feature name="Capture">
-        <param name="android-package" value="org.apache.cordova.mediacapture.Capture"/>
-    </feature>
-    <feature name="Capture">
-        <param name="ios-package" value="CDVCapture"/>
-    </feature>
-    <feature name="DatePicker">
-        <param name="android-package" value="com.plugin.datepicker.DatePickerPlugin"/>
-    </feature>
-    <feature name="DatePicker">
-        <param name="ios-package" value="DatePicker"/>
-    </feature>
-    <feature name="Camera">
-        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher"/>
-    </feature>
-    <feature name="Camera">
-        <param name="ios-package" value="CDVCamera"/>
-    </feature>
-    <feature name="NetworkStatus">
-        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager"/>
-    </feature>
-    <feature name="NetworkStatus">
-        <param name="ios-package" value="CDVConnection"/>
-    </feature>
-    <feature name="Calendar">
-        <param name="android-package" value="nl.xservices.plugins.Calendar"/>
-    </feature>
-    <feature name="Calendar">
-        <param name="ios-package" value="Calendar"/>
-    </feature>
-    <feature name="File">
-        <param name="android-package" value="org.apache.cordova.file.FileUtils"/>
-    </feature>
-    <feature name="File">
-        <param name="ios-package" value="CDVFile"/>
-    </feature>
-    <feature name="SplashScreen">
-        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen"/>
-    </feature>
-    <feature name="SplashScreen">
-        <param name="ios-package" value="CDVSplashScreen"/>
-    </feature>
-    <feature name="AppVersion">
-        <param name="android-package" value="uk.co.whiteoctober.cordova.AppVersion"/>
-    </feature>
-    <feature name="AppVersion">
-        <param name="ios-package" value="AppVersion"/>
-    </feature>
-    <feature name="FileTransfer">
-        <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer"/>
-    </feature>
-    <feature name="FileTransfer">
-        <param name="ios-package" value="CDVFileTransfer"/>
-    </feature>
-    <feature name="Vibrate">
-        <param name="android-package" value="org.apache.cordova.vibration.Vibration"/>
-    </feature>
-    <feature name="Vibrate">
-        <param name="ios-package" value="CDVVibration"/>
-    </feature>
+    <access origin="https://dev-studio.wavemakeronline.com/run-871gz1yz80/TESTMOBILE87/*"/>
     <feature name="BarcodeScanner">
         <param name="android-package" value="com.phonegap.plugins.barcodescanner.BarcodeScanner"/>
     </feature>
@@ -90,11 +31,71 @@
     <feature name="Contacts">
         <param name="ios-package" value="CDVContacts"/>
     </feature>
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher"/>
+    </feature>
+    <feature name="Camera">
+        <param name="ios-package" value="CDVCamera"/>
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager"/>
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="ios-package" value="CDVConnection"/>
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen"/>
+    </feature>
+    <feature name="SplashScreen">
+        <param name="ios-package" value="CDVSplashScreen"/>
+    </feature>
+    <feature name="DatePicker">
+        <param name="android-package" value="com.plugin.datepicker.DatePickerPlugin"/>
+    </feature>
+    <feature name="DatePicker">
+        <param name="ios-package" value="DatePicker"/>
+    </feature>
+    <feature name="Calendar">
+        <param name="android-package" value="nl.xservices.plugins.Calendar"/>
+    </feature>
+    <feature name="Calendar">
+        <param name="ios-package" value="Calendar"/>
+    </feature>
+    <feature name="AppVersion">
+        <param name="android-package" value="uk.co.whiteoctober.cordova.AppVersion"/>
+    </feature>
+    <feature name="AppVersion">
+        <param name="ios-package" value="AppVersion"/>
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils"/>
+    </feature>
+    <feature name="File">
+        <param name="ios-package" value="CDVFile"/>
+    </feature>
+    <feature name="FileTransfer">
+        <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer"/>
+    </feature>
+    <feature name="FileTransfer">
+        <param name="ios-package" value="CDVFileTransfer"/>
+    </feature>
+    <feature name="Vibrate">
+        <param name="android-package" value="org.apache.cordova.vibration.Vibration"/>
+    </feature>
+    <feature name="Vibrate">
+        <param name="ios-package" value="CDVVibration"/>
+    </feature>
     <feature name="Geolocation">
         <param name="android-package" value="org.apache.cordova.geolocation.GeoBroker"/>
     </feature>
     <feature name="Geolocation">
         <param name="ios-package" value="CDVLocation"/>
+    </feature>
+    <feature name="Capture">
+        <param name="android-package" value="org.apache.cordova.mediacapture.Capture"/>
+    </feature>
+    <feature name="Capture">
+        <param name="ios-package" value="CDVCapture"/>
     </feature>
     <platform name="android">
         <splash density="land-ldpi" height="0" src="resources/images/logos/android/land-Splash-screen-ldpi.png" width="0"/>
