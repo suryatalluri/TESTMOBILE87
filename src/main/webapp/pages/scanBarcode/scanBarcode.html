@@ -1,0 +1,14 @@
+<wm-page data-ng-controller="scanBarcodePageController" name="page1">
+    <wm-left-panel content="leftnav" name="left_panel1"></wm-left-panel>
+    <wm-mobile-navbar name="mobile_navbar1" title="BARCODE VAR" backbutton="false"></wm-mobile-navbar>
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-container name="container1" horizontalalign="center">
+                <wm-button class="btn-default" caption="Click me to scan a barcode" type="button" name="button1" on-click="scanBarCode"></wm-button>
+            </wm-container>
+            <wm-container name="container2" horizontalalign="center">
+                <wm-label name="label1" caption="bind:&quot;SCANNED TEXT IS : \&quot;&quot;+Variables.scanBarCode.dataSet.text+&quot;\&quot;&quot;"></wm-label>
+            </wm-container>
+        </wm-page-content>
+    </wm-content>
+</wm-page>

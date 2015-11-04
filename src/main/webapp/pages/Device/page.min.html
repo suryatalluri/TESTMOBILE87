@@ -1,0 +1,71 @@
+<style id="Device.css">
+.deviceInfoContainer {
+    padding: 5px 10px;
+}
+</style>
+<script id="Device.js">
+Application.$controller("DevicePageController", ["$scope", function ($scope) {
+    "use strict";
+}]);
+
+
+</script>
+<script id="Device.variables.json">
+var _DevicePage_Variables_ ={
+	"deviceInfo": {
+		"owner": "Page",
+		"dataSet": {
+			"connectionType": "NONE",
+			"deviceModel": "DEVICEMODEL",
+			"os": "DEVICEOS",
+			"osVersion": "X.X.X",
+			"deviceUUID": "DEVICEUUID"
+		},
+		"dataBinding": {},
+		"service": "device",
+		"operation": "getDeviceInfo",
+		"startUpdate": true,
+		"imageQuality": 80,
+		"imageEncodingType": "0",
+		"allowImageEdit": false,
+		"correctOrientation": true,
+		"saveToPhotoAlbum": false,
+		"geolocationHighAccuracy": true,
+		"geolocationMaximumAge": 3,
+		"geolocationTimeout": 5,
+		"vibrationtime": 2,
+		"category": "wm.DeviceVariable",
+		"_id": "wm-deviceInfo-wm.DeviceVariable-1443148077506"
+	}
+}
+</script>
+<script id="Device.html" type="text/ng-template">
+<wm-page data-ng-controller="DevicePageController" name="page1">
+    <wm-left-panel content="leftnav" columnwidth="2" name="left_panel1"></wm-left-panel>
+    <wm-mobile-navbar name="mobile_navbar1" title="DEVICE INFO" backbutton="false"></wm-mobile-navbar>
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-container name="deviceInfoContainer" class="deviceInfoContainer">
+                <wm-label name="label2" caption="DEVICE UUID" display="block"></wm-label>
+                <wm-label name="label3" caption="bind:Variables.deviceInfo.dataSet.deviceUUID" fontweight="bold"></wm-label>
+            </wm-container>
+            <wm-container class="deviceInfoContainer" name="container2">
+                <wm-label caption="DEVICE MODEL" display="block" name="label3_1"></wm-label>
+                <wm-label caption="bind:Variables.deviceInfo.dataSet.deviceModel" name="label4" fontweight="bold"></wm-label>
+            </wm-container>
+            <wm-container class="deviceInfoContainer" name="container3">
+                <wm-label caption="DEVICE OS" display="block" name="label5"></wm-label>
+                <wm-label caption="bind:Variables.deviceInfo.dataSet.os" name="label6" fontweight="bold"></wm-label>
+            </wm-container>
+            <wm-container class="deviceInfoContainer" name="container4">
+                <wm-label caption="DEVICE OS VERSION" display="block" name="label7"></wm-label>
+                <wm-label caption="bind:Variables.deviceInfo.dataSet.osVersion" name="label8" fontweight="bold"></wm-label>
+            </wm-container>
+            <wm-container class="deviceInfoContainer" name="container5">
+                <wm-label caption="CONNECTION TYPE" display="block" name="label9"></wm-label>
+                <wm-label caption="bind:Variables.deviceInfo.dataSet.connectionType" name="label10" fontweight="bold"></wm-label>
+            </wm-container>
+        </wm-page-content>
+    </wm-content>
+</wm-page>
+</script>

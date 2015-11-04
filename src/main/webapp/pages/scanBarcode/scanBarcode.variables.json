@@ -1,0 +1,25 @@
+{
+	"scanBarCode": {
+		"owner": "Page",
+		"dataSet": {
+			"text": "BAR CODE",
+			"format": "TEXT",
+			"cancelled": false
+		},
+		"dataBinding": {},
+		"service": "scan",
+		"operation": "scanBarCode",
+		"startUpdate": false,
+		"imageQuality": 80,
+		"imageEncodingType": "0",
+		"allowImageEdit": false,
+		"correctOrientation": true,
+		"saveToPhotoAlbum": false,
+		"geolocationHighAccuracy": true,
+		"geolocationMaximumAge": 3,
+		"geolocationTimeout": 5,
+		"vibrationtime": 2,
+		"category": "wm.DeviceVariable",
+		"_id": "wm-scanBarCode-wm.DeviceVariable-1443150750979"
+	}
+}

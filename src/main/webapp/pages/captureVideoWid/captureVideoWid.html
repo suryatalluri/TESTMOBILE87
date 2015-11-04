@@ -1,0 +1,12 @@
+<wm-page data-ng-controller="captureVideoWidPageController" name="page1">
+    <wm-left-panel content="leftnav" name="left_panel1"></wm-left-panel>
+    <wm-mobile-navbar name="mobile_navbar1" title="TAKE VIDEO" backbutton="false"></wm-mobile-navbar>
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-container horizontalalign="center" name="container1">
+                <wm-camera title="Take a Video" name="camera1" iconclass="glyphicon glyphicon-facetime-video"></wm-camera>
+            </wm-container>
+            <wm-video controls="controls" videopreload="none" name="video1" width="100%" mp4format="bind:Widgets.camera1.datavalue"></wm-video>
+        </wm-page-content>
+    </wm-content>
+</wm-page>

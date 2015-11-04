@@ -1,0 +1,43 @@
+<style id="captureVideoWid.css">
+
+</style>
+<script id="captureVideoWid.js">
+Application.$controller("captureVideoWidPageController", ["$scope", function ($scope) {
+    "use strict";
+
+    /* perform any action with the variables inside this block(on-page-load) */
+    $scope.onPageVariablesReady = function () {
+        /*
+         * variables can be accessed through '$scope.Variables' property here
+         * e.g. $scope.Variables.staticVariable1.getData()
+         */
+    };
+    
+    /* perform any action with widgets inside this block */
+    $scope.onPageReady = function () {
+        /*
+         * widgets can be accessed through '$scope.Widgets' property here
+         * e.g. $scope.Widgets.byId(), $scope.Widgets.byName()or access widgets by $scope.Widgets.widgetName
+         */
+    };
+
+}]);
+
+</script>
+<script id="captureVideoWid.variables.json">
+var _captureVideoWidPage_Variables_ ={};
+</script>
+<script id="captureVideoWid.html" type="text/ng-template">
+<wm-page data-ng-controller="captureVideoWidPageController" name="page1">
+    <wm-left-panel content="leftnav" name="left_panel1"></wm-left-panel>
+    <wm-mobile-navbar name="mobile_navbar1" title="TAKE VIDEO" backbutton="false"></wm-mobile-navbar>
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-container horizontalalign="center" name="container1">
+                <wm-camera title="Take a Video" name="camera1" iconclass="glyphicon glyphicon-facetime-video"></wm-camera>
+            </wm-container>
+            <wm-video controls="controls" videopreload="none" name="video1" width="100%" mp4format="bind:Widgets.camera1.datavalue"></wm-video>
+        </wm-page-content>
+    </wm-content>
+</wm-page>
+</script>

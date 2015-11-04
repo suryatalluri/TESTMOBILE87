@@ -1,0 +1,65 @@
+<style id="CaptureVideoVar.css">
+
+</style>
+<script id="CaptureVideoVar.js">
+Application.$controller("CaptureVideoVarPageController", ["$scope", function ($scope) {
+    "use strict";
+
+    /* perform any action with the variables inside this block(on-page-load) */
+    $scope.onPageVariablesReady = function () {
+        /*
+         * variables can be accessed through '$scope.Variables' property here
+         * e.g. $scope.Variables.staticVariable1.getData()
+         */
+    };
+    
+    /* perform any action with widgets inside this block */
+    $scope.onPageReady = function () {
+        /*
+         * widgets can be accessed through '$scope.Widgets' property here
+         * e.g. $scope.Widgets.byId(), $scope.Widgets.byName()or access widgets by $scope.Widgets.widgetName
+         */
+    };
+
+}]);
+
+</script>
+<script id="CaptureVideoVar.variables.json">
+var _CaptureVideoVarPage_Variables_ ={
+	"takeVideo": {
+		"owner": "Page",
+		"dataSet": {
+			"videoPath": ""
+		},
+		"dataBinding": {},
+		"service": "camera",
+		"operation": "captureVideo",
+		"startUpdate": false,
+		"imageQuality": 80,
+		"imageEncodingType": "0",
+		"allowImageEdit": false,
+		"correctOrientation": true,
+		"saveToPhotoAlbum": false,
+		"geolocationHighAccuracy": true,
+		"geolocationMaximumAge": 3,
+		"geolocationTimeout": 5,
+		"vibrationtime": 2,
+		"category": "wm.DeviceVariable",
+		"_id": "wm-takeVideo-wm.DeviceVariable-1443149848940"
+	}
+}
+</script>
+<script id="CaptureVideoVar.html" type="text/ng-template">
+<wm-page data-ng-controller="CaptureVideoVarPageController" name="page1">
+    <wm-left-panel content="leftnav" name="left_panel1"></wm-left-panel>
+    <wm-mobile-navbar name="mobile_navbar1" title="VIDEO VAR" backbutton="false"></wm-mobile-navbar>
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-container name="container1" horizontalalign="center">
+                <wm-button class="btn-default" caption="Click me to take a video" type="button" name="button1" on-click="takeVideo"></wm-button>
+            </wm-container>
+            <wm-video controls="controls" videopreload="none" name="video1" width="100%" mp4format="bind:Variables.takeVideo.dataSet.videoPath"></wm-video>
+        </wm-page-content>
+    </wm-content>
+</wm-page>
+</script>

@@ -1,0 +1,43 @@
+<style id="barcodeScan.css">
+
+</style>
+<script id="barcodeScan.js">
+Application.$controller("barcodeScanPageController", ["$scope", function ($scope) {
+    "use strict";
+
+    /* perform any action with the variables inside this block(on-page-load) */
+    $scope.onPageVariablesReady = function () {
+        /*
+         * variables can be accessed through '$scope.Variables' property here
+         * e.g. $scope.Variables.staticVariable1.getData()
+         */
+    };
+    
+    /* perform any action with widgets inside this block */
+    $scope.onPageReady = function () {
+        /*
+         * widgets can be accessed through '$scope.Widgets' property here
+         * e.g. $scope.Widgets.byId(), $scope.Widgets.byName()or access widgets by $scope.Widgets.widgetName
+         */
+    };
+
+}]);
+
+</script>
+<script id="barcodeScan.variables.json">
+var _barcodeScanPage_Variables_ ={};
+</script>
+<script id="barcodeScan.html" type="text/ng-template">
+<wm-page data-ng-controller="barcodeScanPageController" name="page1">
+    <wm-left-panel content="leftnav" name="left_panel1"></wm-left-panel>
+    <wm-mobile-navbar name="mobile_navbar1" title="BARCODE WID" backbutton="false"></wm-mobile-navbar>
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-container name="container1" horizontalalign="center">
+                <wm-barcodescanner name="barcodescanner1" iconsize="2em"></wm-barcodescanner>
+            </wm-container>
+            <wm-label name="label1" caption="bind:&quot;SCANNED TEXT IS \&quot;&quot;+Widgets.barcodescanner1.datavalue+&quot;\&quot;&quot;" width="100%" textalign="center"></wm-label>
+        </wm-page-content>
+    </wm-content>
+</wm-page>
+</script>

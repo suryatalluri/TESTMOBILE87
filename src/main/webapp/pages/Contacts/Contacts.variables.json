@@ -1,0 +1,33 @@
+{
+	"myContacts": {
+		"owner": "Page",
+		"dataSet": [
+			{
+				"id": "",
+				"displayName": "",
+				"phoneNumbers": [
+					{
+						"value": ""
+					}
+				]
+			}
+		],
+		"dataBinding": {
+			"contactFilter": "bind:Widgets.mobile_navbar1.datavalue"
+		},
+		"service": "contacts",
+		"operation": "getContacts",
+		"startUpdate": true,
+		"imageQuality": 80,
+		"imageEncodingType": "0",
+		"allowImageEdit": false,
+		"correctOrientation": true,
+		"saveToPhotoAlbum": false,
+		"geolocationHighAccuracy": true,
+		"geolocationMaximumAge": 3,
+		"geolocationTimeout": 5,
+		"vibrationtime": 2,
+		"category": "wm.DeviceVariable",
+		"_id": "wm-myContacts-wm.DeviceVariable-1443149067646"
+	}
+}

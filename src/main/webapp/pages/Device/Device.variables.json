@@ -1,0 +1,27 @@
+{
+	"deviceInfo": {
+		"owner": "Page",
+		"dataSet": {
+			"connectionType": "NONE",
+			"deviceModel": "DEVICEMODEL",
+			"os": "DEVICEOS",
+			"osVersion": "X.X.X",
+			"deviceUUID": "DEVICEUUID"
+		},
+		"dataBinding": {},
+		"service": "device",
+		"operation": "getDeviceInfo",
+		"startUpdate": true,
+		"imageQuality": 80,
+		"imageEncodingType": "0",
+		"allowImageEdit": false,
+		"correctOrientation": true,
+		"saveToPhotoAlbum": false,
+		"geolocationHighAccuracy": true,
+		"geolocationMaximumAge": 3,
+		"geolocationTimeout": 5,
+		"vibrationtime": 2,
+		"category": "wm.DeviceVariable",
+		"_id": "wm-deviceInfo-wm.DeviceVariable-1443148077506"
+	}
+}

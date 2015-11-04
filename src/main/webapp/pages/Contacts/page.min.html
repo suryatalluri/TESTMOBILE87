@@ -1,0 +1,62 @@
+<style id="Contacts.css">
+
+
+</style>
+<script id="Contacts.js">
+Application.$controller("ContactsPageController", ["$scope", function ($scope) {
+    "use strict";
+}]);
+
+
+</script>
+<script id="Contacts.variables.json">
+var _ContactsPage_Variables_ ={
+	"myContacts": {
+		"owner": "Page",
+		"dataSet": [
+			{
+				"id": "",
+				"displayName": "",
+				"phoneNumbers": [
+					{
+						"value": ""
+					}
+				]
+			}
+		],
+		"dataBinding": {
+			"contactFilter": "bind:Widgets.mobile_navbar1.datavalue"
+		},
+		"service": "contacts",
+		"operation": "getContacts",
+		"startUpdate": true,
+		"imageQuality": 80,
+		"imageEncodingType": "0",
+		"allowImageEdit": false,
+		"correctOrientation": true,
+		"saveToPhotoAlbum": false,
+		"geolocationHighAccuracy": true,
+		"geolocationMaximumAge": 3,
+		"geolocationTimeout": 5,
+		"vibrationtime": 2,
+		"category": "wm.DeviceVariable",
+		"_id": "wm-myContacts-wm.DeviceVariable-1443149067646"
+	}
+}
+</script>
+<script id="Contacts.html" type="text/ng-template">
+<wm-page data-ng-controller="ContactsPageController" name="page1">
+    <wm-left-panel content="leftnav" name="left_panel1"></wm-left-panel>
+    <wm-mobile-navbar name="mobile_navbar1" title="CONTACTS" searchbutton="true" on-search="myContacts" backbutton="false"></wm-mobile-navbar>
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-livelist listclass="list-group" template="true" name="thumbnailsList" dataset="bind:Variables.myContacts.dataSet" itemclass="list-group-item" bordercolor="#DDD" borderstyle="solid" bordertop="0" borderleft="0" borderright="0" borderbottom="1">
+                <wm-listtemplate layout="gridlayout" name="listtemplate1">
+                    <wm-label name="label3" caption="bind:Variables.myContacts.dataSet[0].displayName" display="block"></wm-label>
+                    <wm-label name="label4" caption="bind:Variables.myContacts.dataSet[0].phoneNumbers[0].value"></wm-label>
+                </wm-listtemplate>
+            </wm-livelist>
+        </wm-page-content>
+    </wm-content>
+</wm-page>
+</script>

@@ -1,0 +1,30 @@
+{
+	"myCalendar": {
+		"owner": "Page",
+		"dataSet": [
+			{
+				"title": "",
+				"message": "",
+				"location": "",
+				"startDate": "",
+				"endDate": ""
+			}
+		],
+		"dataBinding": {},
+		"service": "calendar",
+		"operation": "getEvents",
+		"startUpdate": true,
+		"imageQuality": 80,
+		"imageEncodingType": "0",
+		"allowImageEdit": false,
+		"correctOrientation": true,
+		"saveToPhotoAlbum": false,
+		"geolocationHighAccuracy": true,
+		"geolocationMaximumAge": 3,
+		"geolocationTimeout": 5,
+		"vibrationtime": 2,
+		"category": "wm.DeviceVariable",
+		"_id": "wm-myCalendar-wm.DeviceVariable-1443149269564",
+		"name": "myCalendar"
+	}
+}

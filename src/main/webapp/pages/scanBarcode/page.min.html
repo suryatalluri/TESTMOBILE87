@@ -1,0 +1,69 @@
+<style id="scanBarcode.css">
+
+</style>
+<script id="scanBarcode.js">
+Application.$controller("scanBarcodePageController", ["$scope", function ($scope) {
+    "use strict";
+
+    /* perform any action with the variables inside this block(on-page-load) */
+    $scope.onPageVariablesReady = function () {
+        /*
+         * variables can be accessed through '$scope.Variables' property here
+         * e.g. $scope.Variables.staticVariable1.getData()
+         */
+    };
+    
+    /* perform any action with widgets inside this block */
+    $scope.onPageReady = function () {
+        /*
+         * widgets can be accessed through '$scope.Widgets' property here
+         * e.g. $scope.Widgets.byId(), $scope.Widgets.byName()or access widgets by $scope.Widgets.widgetName
+         */
+    };
+
+}]);
+
+</script>
+<script id="scanBarcode.variables.json">
+var _scanBarcodePage_Variables_ ={
+	"scanBarCode": {
+		"owner": "Page",
+		"dataSet": {
+			"text": "BAR CODE",
+			"format": "TEXT",
+			"cancelled": false
+		},
+		"dataBinding": {},
+		"service": "scan",
+		"operation": "scanBarCode",
+		"startUpdate": false,
+		"imageQuality": 80,
+		"imageEncodingType": "0",
+		"allowImageEdit": false,
+		"correctOrientation": true,
+		"saveToPhotoAlbum": false,
+		"geolocationHighAccuracy": true,
+		"geolocationMaximumAge": 3,
+		"geolocationTimeout": 5,
+		"vibrationtime": 2,
+		"category": "wm.DeviceVariable",
+		"_id": "wm-scanBarCode-wm.DeviceVariable-1443150750979"
+	}
+}
+</script>
+<script id="scanBarcode.html" type="text/ng-template">
+<wm-page data-ng-controller="scanBarcodePageController" name="page1">
+    <wm-left-panel content="leftnav" name="left_panel1"></wm-left-panel>
+    <wm-mobile-navbar name="mobile_navbar1" title="BARCODE VAR" backbutton="false"></wm-mobile-navbar>
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-container name="container1" horizontalalign="center">
+                <wm-button class="btn-default" caption="Click me to scan a barcode" type="button" name="button1" on-click="scanBarCode"></wm-button>
+            </wm-container>
+            <wm-container name="container2" horizontalalign="center">
+                <wm-label name="label1" caption="bind:&quot;SCANNED TEXT IS : \&quot;&quot;+Variables.scanBarCode.dataSet.text+&quot;\&quot;&quot;"></wm-label>
+            </wm-container>
+        </wm-page-content>
+    </wm-content>
+</wm-page>
+</script>

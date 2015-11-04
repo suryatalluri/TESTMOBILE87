@@ -1,0 +1,123 @@
+<style id="fileUploadVar.css">
+
+</style>
+<script id="fileUploadVar.js">
+Application.$controller("fileUploadVarPageController", ["$scope", function($scope) {
+    "use strict";
+
+    /* perform any action with the variables inside this block(on-page-load) */
+    $scope.onPageVariablesReady = function() {
+        /*
+         * variables can be accessed through '$scope.Variables' property here
+         * e.g. $scope.Variables.staticVariable1.getData()
+         */
+    };
+
+    /* perform any action with widgets inside this block */
+    $scope.onPageReady = function() {
+        /*
+         * widgets can be accessed through '$scope.Widgets' property here
+         * e.g. $scope.Widgets.byId(), $scope.Widgets.byName()or access widgets by $scope.Widgets.widgetName
+         */
+    };
+
+
+    $scope.camera1Success = function($event, $isolateScope) {
+        $scope.Variables.uploadIndicator.dataSet.dataValue = 0;
+    };
+
+
+    $scope.uploadFileonSuccess = function(variable, data) {
+        $scope.Variables.uploadIndicator.dataSet.dataValue = 1;
+    };
+
+    $scope.uploadFileonError = function(variable, data) {
+        $scope.Variables.uploadIndicator.dataSet.dataValue = -1;
+    };
+
+}]);
+</script>
+<script id="fileUploadVar.variables.json">
+var _fileUploadVarPage_Variables_ ={
+	"uploadFile": {
+		"name": "uploadFile",
+		"owner": "Page",
+		"dataSet": {
+			"name": "",
+			"path": "",
+			"size": 0,
+			"type": ""
+		},
+		"dataBinding": {
+			"localFile": "bind:Widgets.camera1.datavalue"
+		},
+		"service": "file",
+		"operation": "upload",
+		"startUpdate": false,
+		"imageQuality": 80,
+		"imageEncodingType": "0",
+		"allowImageEdit": false,
+		"correctOrientation": true,
+		"saveToPhotoAlbum": false,
+		"geolocationHighAccuracy": true,
+		"geolocationMaximumAge": 3,
+		"geolocationTimeout": 5,
+		"onSuccess": "Javascript",
+		"onError": "Javascript",
+		"vibrationtime": 2,
+		"category": "wm.DeviceVariable",
+		"_id": "wm-uploadFile-wm.DeviceVariable-1443172763720"
+	},
+	"uploadIndicator": {
+		"name": "uploadIndicator",
+		"type": "number",
+		"isList": false,
+		"owner": "Page",
+		"dataSet": {
+			"dataValue": "-2"
+		},
+		"dataBinding": [
+			{
+				"name": "dataSet",
+				"fields": [
+					{
+						"name": "dataValue",
+						"type": "number"
+					}
+				],
+				"type": "object",
+				"isList": false
+			}
+		],
+		"saveInPhonegap": false,
+		"category": "wm.Variable",
+		"_id": "wm-uploadIndicator-wm.Variable-1443173263049"
+	}
+}
+</script>
+<script id="fileUploadVar.html" type="text/ng-template">
+<wm-page data-ng-controller="fileUploadVarPageController" name="page1">
+    <wm-left-panel content="leftnav" name="left_panel1"></wm-left-panel>
+    <wm-mobile-navbar name="mobile_navbar1" title="FiLEUPLOAD VAR" backbutton="false"></wm-mobile-navbar>
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-container name="container1" horizontalalign="center">
+                <wm-label name="label4" display="block" caption="Take a picture and it will be uploaded to the server."></wm-label>
+                <wm-camera name="camera1" on-success="camera1Success($event, $scope);uploadFile"></wm-camera>
+            </wm-container>
+            <wm-container name="container2" backgroundcolor="#6a93f1" horizontalalign="center" show="bind:Variables.uploadIndicator.dataSet.dataValue === 0">
+                <wm-icon name="icon1" iconclass="fa fa-refresh fa-lg fa-spin" color="#fff"></wm-icon>
+                <wm-label name="label1" caption="Uploading Picture" textalign="center" paddingleft="10" color="#fff"></wm-label>
+            </wm-container>
+            <wm-container backgroundcolor="#ee3232" name="container6" show="bind:Variables.uploadIndicator.dataSet.dataValue === -1">
+                <wm-icon iconclass="fa fa-close fa-lg" color="#fff" name="icon5"></wm-icon>
+                <wm-label caption="Failed to upload" textalign="center" paddingleft="10" color="#fff" name="label5"></wm-label>
+            </wm-container>
+            <wm-container backgroundcolor="#136f34" name="container7" show="bind:Variables.uploadIndicator.dataSet.dataValue === 1">
+                <wm-icon iconclass="fa fa-check fa-lg" color="#fff" name="icon6"></wm-icon>
+                <wm-label caption="SuccessFully Uploaded" textalign="center" paddingleft="10" color="#fff" name="label6"></wm-label>
+            </wm-container>
+        </wm-page-content>
+    </wm-content>
+</wm-page>
+</script>

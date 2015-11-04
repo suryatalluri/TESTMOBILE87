@@ -1,0 +1,12 @@
+<wm-page data-ng-controller="CameraPictureVarPageController" name="page1">
+    <wm-left-panel content="leftnav" columnwidth="2" name="left_panel1"></wm-left-panel>
+    <wm-mobile-navbar name="mobile_navbar1" title="PICTURE VAR" backbutton="false"></wm-mobile-navbar>
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-container name="container1" horizontalalign="center">
+                <wm-button class="btn-default" caption="Click Me to take a picture" type="button" name="button1" height="38" on-click="takePicture"></wm-button>
+            </wm-container>
+            <wm-picture name="picture1" width="100%" picturesource="bind:Variables.takePicture.dataSet.imagePath"></wm-picture>
+        </wm-page-content>
+    </wm-content>
+</wm-page>

@@ -1,0 +1,32 @@
+{
+	"myLocation": {
+		"owner": "Page",
+		"dataSet": {
+			"coords": {
+				"latitude": 0,
+				"longitude": 0,
+				"altitude": 0,
+				"accuracy": 0,
+				"altitudeAccuracy": 0,
+				"heading": 0,
+				"speed": 0
+			},
+			"timestamp": 0
+		},
+		"dataBinding": {},
+		"service": "device",
+		"operation": "getCurrentGeoPosition",
+		"startUpdate": true,
+		"imageQuality": 80,
+		"imageEncodingType": "0",
+		"allowImageEdit": false,
+		"correctOrientation": true,
+		"saveToPhotoAlbum": false,
+		"geolocationHighAccuracy": true,
+		"geolocationMaximumAge": 3,
+		"geolocationTimeout": 5,
+		"vibrationtime": 2,
+		"category": "wm.DeviceVariable",
+		"_id": "wm-myLocation-wm.DeviceVariable-1443149409583"
+	}
+}

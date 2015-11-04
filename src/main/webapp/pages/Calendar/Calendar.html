@@ -1,0 +1,19 @@
+<wm-page data-ng-controller="CalendarPageController" name="page1">
+    <wm-left-panel content="leftnav" name="left_panel1"></wm-left-panel>
+    <wm-mobile-navbar name="mobile_navbar1" title="CALENDAR" backbutton="false"></wm-mobile-navbar>
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-livelist listclass="list-group" itemclass="list-group-item" name="livelist1" dataset="bind:Variables.myCalendar.dataSet">
+                <wm-listtemplate layout="blank" name="listtemplate1">
+                    <wm-container class="blank" data-template-ctr="true" name="container1">
+                        <wm-label width="100%" caption="bind:Variables.myCalendar.dataSet.title" name="label1"></wm-label>
+                        <wm-label width="100%" caption="bind:Variables.myCalendar.dataSet.message" name="label2"></wm-label>
+                        <wm-label width="100%" caption="bind:Variables.myCalendar.dataSet.location" name="label3"></wm-label>
+                        <wm-label width="100%" caption="bind:Variables.myCalendar.dataSet.startDate" name="label4"></wm-label>
+                        <wm-label width="100%" caption="bind:Variables.myCalendar.dataSet.endDate" name="label5"></wm-label>
+                    </wm-container>
+                </wm-listtemplate>
+            </wm-livelist>
+        </wm-page-content>
+    </wm-content>
+</wm-page>

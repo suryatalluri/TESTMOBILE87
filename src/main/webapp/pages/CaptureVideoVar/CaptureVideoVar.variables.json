@@ -1,0 +1,23 @@
+{
+	"takeVideo": {
+		"owner": "Page",
+		"dataSet": {
+			"videoPath": ""
+		},
+		"dataBinding": {},
+		"service": "camera",
+		"operation": "captureVideo",
+		"startUpdate": false,
+		"imageQuality": 80,
+		"imageEncodingType": "0",
+		"allowImageEdit": false,
+		"correctOrientation": true,
+		"saveToPhotoAlbum": false,
+		"geolocationHighAccuracy": true,
+		"geolocationMaximumAge": 3,
+		"geolocationTimeout": 5,
+		"vibrationtime": 2,
+		"category": "wm.DeviceVariable",
+		"_id": "wm-takeVideo-wm.DeviceVariable-1443149848940"
+	}
+}

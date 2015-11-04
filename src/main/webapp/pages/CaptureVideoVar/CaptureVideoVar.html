@@ -1,0 +1,12 @@
+<wm-page data-ng-controller="CaptureVideoVarPageController" name="page1">
+    <wm-left-panel content="leftnav" name="left_panel1"></wm-left-panel>
+    <wm-mobile-navbar name="mobile_navbar1" title="VIDEO VAR" backbutton="false"></wm-mobile-navbar>
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-container name="container1" horizontalalign="center">
+                <wm-button class="btn-default" caption="Click me to take a video" type="button" name="button1" on-click="takeVideo"></wm-button>
+            </wm-container>
+            <wm-video controls="controls" videopreload="none" name="video1" width="100%" mp4format="bind:Variables.takeVideo.dataSet.videoPath"></wm-video>
+        </wm-page-content>
+    </wm-content>
+</wm-page>

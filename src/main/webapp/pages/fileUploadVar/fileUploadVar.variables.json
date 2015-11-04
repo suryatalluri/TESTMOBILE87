@@ -1,0 +1,56 @@
+{
+	"uploadFile": {
+		"name": "uploadFile",
+		"owner": "Page",
+		"dataSet": {
+			"name": "",
+			"path": "",
+			"size": 0,
+			"type": ""
+		},
+		"dataBinding": {
+			"localFile": "bind:Widgets.camera1.datavalue"
+		},
+		"service": "file",
+		"operation": "upload",
+		"startUpdate": false,
+		"imageQuality": 80,
+		"imageEncodingType": "0",
+		"allowImageEdit": false,
+		"correctOrientation": true,
+		"saveToPhotoAlbum": false,
+		"geolocationHighAccuracy": true,
+		"geolocationMaximumAge": 3,
+		"geolocationTimeout": 5,
+		"onSuccess": "Javascript",
+		"onError": "Javascript",
+		"vibrationtime": 2,
+		"category": "wm.DeviceVariable",
+		"_id": "wm-uploadFile-wm.DeviceVariable-1443172763720"
+	},
+	"uploadIndicator": {
+		"name": "uploadIndicator",
+		"type": "number",
+		"isList": false,
+		"owner": "Page",
+		"dataSet": {
+			"dataValue": "-2"
+		},
+		"dataBinding": [
+			{
+				"name": "dataSet",
+				"fields": [
+					{
+						"name": "dataValue",
+						"type": "number"
+					}
+				],
+				"type": "object",
+				"isList": false
+			}
+		],
+		"saveInPhonegap": false,
+		"category": "wm.Variable",
+		"_id": "wm-uploadIndicator-wm.Variable-1443173263049"
+	}
+}

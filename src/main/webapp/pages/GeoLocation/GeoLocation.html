@@ -1,0 +1,9 @@
+<wm-page data-ng-controller="GeoLocationPageController" name="page1">
+    <wm-left-panel content="leftnav" name="left_panel1"></wm-left-panel>
+    <wm-mobile-navbar name="mobile_navbar1" title="My Location" backbutton="false"></wm-mobile-navbar>
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-prefab prefabname="googlemaps" name="googlemaps1" height="100%" width="100%" locations="bind:Variables.myLocation.dataSet" lat="coords.latitude" lng="coords.longitude" zoom="15"></wm-prefab>
+        </wm-page-content>
+    </wm-content>
+</wm-page>

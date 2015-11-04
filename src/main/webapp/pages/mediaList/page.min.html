@@ -1,0 +1,101 @@
+<style id="mediaList.css">
+/*.my-medialist li {
+    width: 150px;
+    height: 200px;
+    overflow: hidden;
+}*/
+</style>
+<script id="mediaList.js">
+Application.$controller("mediaListPageController", ["$scope", function ($scope) {
+    "use strict";
+
+    /* perform any action with the variables inside this block(on-page-load) */
+    $scope.onPageVariablesReady = function () {
+        /*
+         * variables can be accessed through '$scope.Variables' property here
+         * e.g. $scope.Variables.staticVariable1.getData()
+         */
+    };
+    
+    /* perform any action with widgets inside this block */
+    $scope.onPageReady = function () {
+        /*
+         * widgets can be accessed through '$scope.Widgets' property here
+         * e.g. $scope.Widgets.byId(), $scope.Widgets.byName()or access widgets by $scope.Widgets.widgetName
+         */
+    };
+
+}]);
+
+</script>
+<script id="mediaList.variables.json">
+var _mediaListPage_Variables_ ={
+	"images": {
+		"name": "images",
+		"type": "entry",
+		"isList": true,
+		"owner": "Page",
+		"dataSet": [
+			{
+				"src": "http://dev.wavemaker.com/examples/salesrep/Amanda-Brown.png"
+			},
+			{
+				"src": "http://dev.wavemaker.com/examples/salesrep/Brad-Tucker.png"
+			},
+			{
+				"src": "http://dev.wavemaker.com/examples/salesrep/Chris-Madison.png"
+			},
+			{
+				"src": "http://dev.wavemaker.com/examples/salesrep/Eric-Lin.png"
+			},
+			{
+				"src": "http://dev.wavemaker.com/examples/salesrep/Jane-Lisa.png"
+			},
+			{
+				"src": "http://dev.wavemaker.com/examples/salesrep/Jessica-Bennet.png"
+			},
+			{
+				"src": "http://dev.wavemaker.com/examples/salesrep/Keith-Neilson.png"
+			},
+			{
+				"src": "http://dev.wavemaker.com/examples/salesrep/Patricia-George.png"
+			},
+			{
+				"src": "http://dev.wavemaker.com/examples/salesrep/Sally-Jones.png"
+			},
+			{
+				"src": "http://dev.wavemaker.com/examples/salesrep/William-Hogan.png"
+			}
+		],
+		"dataBinding": [
+			{
+				"name": "dataSet",
+				"fields": [
+					{
+						"name": "src",
+						"type": "entry"
+					}
+				],
+				"type": "object",
+				"isList": true
+			}
+		],
+		"saveInPhonegap": false,
+		"category": "wm.Variable",
+		"_id": "wm-images-wm.Variable-1443175723158"
+	}
+}
+</script>
+<script id="mediaList.html" type="text/ng-template">
+<wm-page data-ng-controller="mediaListPageController" name="page1">
+    <wm-left-panel content="leftnav" name="left_panel1"></wm-left-panel>
+    <wm-mobile-navbar name="mobile_navbar1" title="MEDIALIST" backbutton="false"></wm-mobile-navbar>
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-media-list name="media_list1" dataset="bind:Variables.images.dataSet" thumbnailurl="src" mediaurl="src" layout="Single-row" class="my-medialist">
+                <wm-media-template name="media_template1"></wm-media-template>
+            </wm-media-list>
+        </wm-page-content>
+    </wm-content>
+</wm-page>
+</script>
