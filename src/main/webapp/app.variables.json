@@ -1635,14 +1635,5 @@
 		"vibrationtime": 2,
 		"category": "wm.DeviceVariable",
 		"_id": "wm-takePicture-wm.DeviceVariable-1443149724998"
-	},
-	"goToPage_Page": {
-		"owner": "App",
-		"operation": "gotoPage",
-		"pageName": "Page",
-		"dataBinding": {},
-		"pageTransitions": "none",
-		"category": "wm.NavigationVariable",
-		"_id": "wm-goToPage_Page-wm.NavigationVariable-1447667141687"
 	}
 }
