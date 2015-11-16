@@ -1,12 +1,13 @@
-<wm-page data-ng-controller="CameraPictureVarPageController" name="page1">
-    <wm-left-panel content="leftnav" columnwidth="2" name="left_panel1"></wm-left-panel>
-    <wm-mobile-navbar name="mobile_navbar1" title="PICTURE VAR" backbutton="false"></wm-mobile-navbar>
+<wm-page name="page1" data-ng-controller="CameraPictureVarPageController">
+    <wm-left-panel content="leftnav" name="left_panel1" columnwidth="2"></wm-left-panel>
+    <wm-mobile-navbar title="PICTURE VAR" name="mobile_navbar1" backbutton="false"></wm-mobile-navbar>
     <wm-content name="content1">
-        <wm-page-content columnwidth="12" name="page_content1">
+        <wm-page-content name="page_content1" columnwidth="12">
             <wm-container name="container1" horizontalalign="center">
-                <wm-button class="btn-default" caption="Click Me to take a picture" type="button" name="button1" height="38" on-click="takePicture"></wm-button>
+                <wm-button class="btn-default" type="button" name="button1" caption="Click Me to take a picture" height="38" on-click="takePicture"></wm-button>
             </wm-container>
-            <wm-picture name="picture1" width="100%" picturesource="bind:Variables.takePicture.dataSet.imagePath"></wm-picture>
+            <wm-picture width="100%" name="picture1" picturesource="bind:Variables.takePicture.dataSet.imagePath"></wm-picture>
+            <wm-fileupload name="fileupload1" operation="uploadFile" service="FileService" on-success="fileupload1Success($event, $scope)"></wm-fileupload>
         </wm-page-content>
     </wm-content>
 </wm-page>

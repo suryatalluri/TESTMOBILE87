@@ -161,11 +161,13 @@
 			"parameters": [
 				{
 					"name": "formdata",
-					"parameterType": "formData"
+					"parameterType": "formData",
+					"type": "file"
 				},
 				{
 					"name": "relativePath",
-					"parameterType": "query"
+					"parameterType": "query",
+					"type": "string"
 				}
 			]
 		},
@@ -1610,5 +1612,37 @@
 			"fullyQualifiedName": "com.hrdb.Vacation",
 			"tableType": "TABLE"
 		}
+	},
+	"takePicture": {
+		"name": "takePicture",
+		"owner": "App",
+		"dataSet": {
+			"imagePath": "resources/images/imagelists/default-image.png"
+		},
+		"dataBinding": {},
+		"service": "camera",
+		"operation": "captureImage",
+		"startUpdate": false,
+		"imageQuality": 80,
+		"imageEncodingType": "0",
+		"allowImageEdit": false,
+		"correctOrientation": true,
+		"saveToPhotoAlbum": false,
+		"geolocationHighAccuracy": true,
+		"geolocationMaximumAge": 3,
+		"geolocationTimeout": 5,
+		"onSuccess": "FileServiceUploadFile",
+		"vibrationtime": 2,
+		"category": "wm.DeviceVariable",
+		"_id": "wm-takePicture-wm.DeviceVariable-1443149724998"
+	},
+	"goToPage_Page": {
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Page",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Page-wm.NavigationVariable-1447667141687"
 	}
 }
