@@ -2,42 +2,64 @@
 
 </style>
 <script id="CameraPictureVar.js">
-Application.$controller("CameraPictureVarPageController", ["$scope", function($scope) {
+Application.$controller("CameraPictureVarPageController", ["$scope", function ($scope) {
     "use strict";
 
     /* perform any action with the variables inside this block(on-page-load) */
-    $scope.onPageVariablesReady = function() {
+    $scope.onPageVariablesReady = function () {
         /*
          * variables can be accessed through '$scope.Variables' property here
          * e.g. $scope.Variables.staticVariable1.getData()
          */
     };
-
+    
     /* perform any action with widgets inside this block */
-    $scope.onPageReady = function() {
+    $scope.onPageReady = function () {
         /*
          * widgets can be accessed through '$scope.Widgets' property here
          * e.g. $scope.Widgets.byId(), $scope.Widgets.byName()or access widgets by $scope.Widgets.widgetName
          */
     };
 
-
 }]);
+
 </script>
 <script id="CameraPictureVar.variables.json">
-var _CameraPictureVarPage_Variables_ ={}
+var _CameraPictureVarPage_Variables_ ={
+  "takePicture" : {
+    "geolocationTimeout" : 5,
+    "saveToPhotoAlbum" : false,
+    "geolocationMaximumAge" : 3,
+    "startUpdate" : false,
+    "correctOrientation" : true,
+    "dataSet" : {
+      "imagePath" : "resources/images/imagelists/default-image.png"
+    },
+    "imageEncodingType" : "0",
+    "operation" : "captureImage",
+    "category" : "wm.DeviceVariable",
+    "vibrationtime" : 2,
+    "allowImageEdit" : false,
+    "geolocationHighAccuracy" : true,
+    "dataBinding" : { },
+    "_id" : "wm-takePicture-wm.DeviceVariable-1443149724998",
+    "name" : "takePicture",
+    "service" : "camera",
+    "owner" : "Page",
+    "imageQuality" : 80
+  }
+}
 </script>
 <script id="CameraPictureVar.html" type="text/ng-template">
-<wm-page name="page1" data-ng-controller="CameraPictureVarPageController">
-    <wm-left-panel content="leftnav" name="left_panel1" columnwidth="2"></wm-left-panel>
-    <wm-mobile-navbar title="PICTURE VAR" name="mobile_navbar1" backbutton="false"></wm-mobile-navbar>
+<wm-page data-ng-controller="CameraPictureVarPageController" name="page1">
+    <wm-left-panel content="leftnav" columnwidth="2" name="left_panel1"></wm-left-panel>
+    <wm-mobile-navbar name="mobile_navbar1" title="PICTURE VAR" backbutton="false"></wm-mobile-navbar>
     <wm-content name="content1">
-        <wm-page-content name="page_content1" columnwidth="12">
+        <wm-page-content columnwidth="12" name="page_content1">
             <wm-container name="container1" horizontalalign="center">
-                <wm-button class="btn-default" type="button" name="button1" caption="Click Me to take a picture" height="38" on-click="takePicture"></wm-button>
+                <wm-button class="btn-default" caption="Click Me to take a picture" type="button" name="button1" height="38" on-click="takePicture"></wm-button>
             </wm-container>
-            <wm-picture width="100%" name="picture1" picturesource="bind:Variables.takePicture.dataSet.imagePath"></wm-picture>
-            <wm-fileupload name="fileupload1" operation="uploadFile" service="FileService" on-success="fileupload1Success($event, $scope)"></wm-fileupload>
+            <wm-picture name="picture1" width="100%" picturesource="bind:Variables.takePicture.dataSet.imagePath"></wm-picture>
         </wm-page-content>
     </wm-content>
 </wm-page>

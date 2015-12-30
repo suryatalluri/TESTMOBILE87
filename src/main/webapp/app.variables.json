@@ -1,258 +1,4 @@
 {
-	"goToPage-Main": {
-		"name": "goToPage-Main",
-		"owner": "App",
-		"operation": "gotoPage",
-		"pageName": "Main",
-		"dataBinding": {},
-		"pageTransitions": "none",
-		"category": "wm.NavigationVariable",
-		"_id": "wm-goToPage-Main-wm.NavigationVariable1389180517517"
-	},
-	"supportedLocale": {
-		"name": "supportedLocale",
-		"type": "string",
-		"isList": false,
-		"owner": "App",
-		"dataSet": {
-			"en": "English"
-		},
-		"dataBinding": [
-			{
-				"name": "dataSet",
-				"type": "object",
-				"fields": [
-					{
-						"name": "dataValue",
-						"type": "string"
-					}
-				]
-			}
-		],
-		"saveInPhonegap": false,
-		"category": "wm.Variable",
-		"_id": "wm-supportedLocale-wm.Variable1402640443182"
-	},
-	"goToPage_Device": {
-		"name": "goToPage_Device",
-		"owner": "App",
-		"operation": "gotoPage",
-		"pageName": "Device",
-		"dataBinding": {},
-		"pageTransitions": "none",
-		"category": "wm.NavigationVariable",
-		"_id": "wm-goToPage_Device-wm.NavigationVariable-1443147834709"
-	},
-	"goToPage_AppInfo": {
-		"name": "goToPage_AppInfo",
-		"owner": "App",
-		"operation": "gotoPage",
-		"pageName": "AppInfo",
-		"dataBinding": {},
-		"pageTransitions": "none",
-		"category": "wm.NavigationVariable",
-		"_id": "wm-goToPage_AppInfo-wm.NavigationVariable-1443148873989"
-	},
-	"goToPage_Contacts": {
-		"name": "goToPage_Contacts",
-		"owner": "App",
-		"operation": "gotoPage",
-		"pageName": "Contacts",
-		"dataBinding": {},
-		"pageTransitions": "none",
-		"category": "wm.NavigationVariable",
-		"_id": "wm-goToPage_Contacts-wm.NavigationVariable-1443149019535"
-	},
-	"goToPage_Calendar": {
-		"name": "goToPage_Calendar",
-		"owner": "App",
-		"operation": "gotoPage",
-		"pageName": "Calendar",
-		"dataBinding": {},
-		"pageTransitions": "none",
-		"category": "wm.NavigationVariable",
-		"_id": "wm-goToPage_Calendar-wm.NavigationVariable-1443149226000"
-	},
-	"goToPage_GeoLocation": {
-		"name": "goToPage_GeoLocation",
-		"owner": "App",
-		"operation": "gotoPage",
-		"pageName": "GeoLocation",
-		"dataBinding": {},
-		"pageTransitions": "none",
-		"category": "wm.NavigationVariable",
-		"_id": "wm-goToPage_GeoLocation-wm.NavigationVariable-1443149348458"
-	},
-	"goToPage_CameraPictureVar": {
-		"name": "goToPage_CameraPictureVar",
-		"owner": "App",
-		"operation": "gotoPage",
-		"pageName": "CameraPictureVar",
-		"dataBinding": {},
-		"pageTransitions": "none",
-		"category": "wm.NavigationVariable",
-		"_id": "wm-goToPage_CameraPictureVar-wm.NavigationVariable-1443149654664"
-	},
-	"goToPage_CaptureVideoVar": {
-		"name": "goToPage_CaptureVideoVar",
-		"owner": "App",
-		"operation": "gotoPage",
-		"pageName": "CaptureVideoVar",
-		"dataBinding": {},
-		"pageTransitions": "none",
-		"category": "wm.NavigationVariable",
-		"_id": "wm-goToPage_CaptureVideoVar-wm.NavigationVariable-1443149766161"
-	},
-	"goToPage_scanBarcode": {
-		"name": "goToPage_scanBarcode",
-		"owner": "App",
-		"operation": "gotoPage",
-		"pageName": "scanBarcode",
-		"dataBinding": {},
-		"pageTransitions": "none",
-		"category": "wm.NavigationVariable",
-		"_id": "wm-goToPage_scanBarcode-wm.NavigationVariable-1443150663980"
-	},
-	"goToPage_fileUploadVar": {
-		"name": "goToPage_fileUploadVar",
-		"owner": "App",
-		"operation": "gotoPage",
-		"pageName": "fileUploadVar",
-		"dataBinding": {},
-		"pageTransitions": "none",
-		"category": "wm.NavigationVariable",
-		"_id": "wm-goToPage_fileUploadVar-wm.NavigationVariable-1443150797676"
-	},
-	"FileServiceUploadFile": {
-		"name": "FileServiceUploadFile",
-		"type": "string",
-		"isList": false,
-		"owner": "App",
-		"dataSet": {
-			"dataValue": ""
-		},
-		"dataBinding": [
-			{
-				"name": "dataBinding",
-				"type": "object",
-				"fields": []
-			}
-		],
-		"saveInPhonegap": false,
-		"firstRow": 0,
-		"maxResults": 20,
-		"designMaxResults": 10,
-		"service": "FileService",
-		"operation": "uploadFile",
-		"startUpdate": false,
-		"autoUpdate": true,
-		"inFlightBehavior": "executeLast",
-		"transformationRequired": false,
-		"serviceType": "JavaService",
-		"category": "wm.ServiceVariable",
-		"isDefault": true,
-		"wmServiceOperationInfo": {
-			"methodType": "post",
-			"name": "uploadFile",
-			"relativePath": "/file/uploadFile",
-			"consumes": [
-				"multipart/form-data"
-			],
-			"parameters": [
-				{
-					"name": "formdata",
-					"parameterType": "formData",
-					"type": "file"
-				},
-				{
-					"name": "relativePath",
-					"parameterType": "query",
-					"type": "string"
-				}
-			]
-		},
-		"_id": "wm-FileServiceUploadFile-wm.ServiceVariable-1443174441693"
-	},
-	"goToPage_segmented": {
-		"name": "goToPage_segmented",
-		"owner": "App",
-		"operation": "gotoPage",
-		"pageName": "segmented",
-		"dataBinding": {},
-		"pageTransitions": "none",
-		"category": "wm.NavigationVariable",
-		"_id": "wm-goToPage_segmented-wm.NavigationVariable-1443174774472"
-	},
-	"goToPage_tabbar": {
-		"name": "goToPage_tabbar",
-		"owner": "App",
-		"operation": "gotoPage",
-		"pageName": "tabbar",
-		"dataBinding": {},
-		"pageTransitions": "none",
-		"category": "wm.NavigationVariable",
-		"_id": "wm-goToPage_tabbar-wm.NavigationVariable-1443174867034"
-	},
-	"goToPage_mediaList": {
-		"name": "goToPage_mediaList",
-		"owner": "App",
-		"operation": "gotoPage",
-		"pageName": "mediaList",
-		"dataBinding": {},
-		"pageTransitions": "none",
-		"category": "wm.NavigationVariable",
-		"_id": "wm-goToPage_mediaList-wm.NavigationVariable-1443174907356"
-	},
-	"goToPage_camearWid": {
-		"name": "goToPage_camearWid",
-		"owner": "App",
-		"operation": "gotoPage",
-		"pageName": "camearWid",
-		"dataBinding": {},
-		"pageTransitions": "none",
-		"category": "wm.NavigationVariable",
-		"_id": "wm-goToPage_camearWid-wm.NavigationVariable-1443176369363"
-	},
-	"goToPage_captureVideoWid": {
-		"name": "goToPage_captureVideoWid",
-		"owner": "App",
-		"operation": "gotoPage",
-		"pageName": "captureVideoWid",
-		"dataBinding": {},
-		"pageTransitions": "none",
-		"category": "wm.NavigationVariable",
-		"_id": "wm-goToPage_captureVideoWid-wm.NavigationVariable-1443176458310"
-	},
-	"goToPage_barcodeScan": {
-		"name": "goToPage_barcodeScan",
-		"owner": "App",
-		"operation": "gotoPage",
-		"pageName": "barcodeScan",
-		"dataBinding": {},
-		"pageTransitions": "none",
-		"category": "wm.NavigationVariable",
-		"_id": "wm-goToPage_barcodeScan-wm.NavigationVariable-1443176572769"
-	},
-	"goToPage_dates": {
-		"name": "goToPage_dates",
-		"owner": "App",
-		"operation": "gotoPage",
-		"pageName": "dates",
-		"dataBinding": {},
-		"pageTransitions": "none",
-		"category": "wm.NavigationVariable",
-		"_id": "wm-goToPage_dates-wm.NavigationVariable-1443176756965"
-	},
-	"goToPage_fileUploadWid": {
-		"name": "goToPage_fileUploadWid",
-		"owner": "App",
-		"operation": "gotoPage",
-		"pageName": "fileUploadWid",
-		"dataBinding": {},
-		"pageTransitions": "none",
-		"category": "wm.NavigationVariable",
-		"_id": "wm-goToPage_fileUploadWid-wm.NavigationVariable-1443176975048"
-	},
 	"HrdbDepartmentData": {
 		"name": "HrdbDepartmentData",
 		"type": "Department",
@@ -261,13 +7,7 @@
 		"dataSet": {
 			"dataValue": ""
 		},
-		"dataBinding": [
-			{
-				"name": "dataBinding",
-				"type": "object",
-				"fields": []
-			}
-		],
+		"dataBinding": [],
 		"saveInPhonegap": false,
 		"firstRow": 0,
 		"maxResults": 20,
@@ -280,13 +20,7 @@
 		"liveSource": "hrdb",
 		"ignoreCase": false,
 		"matchMode": "start",
-		"category": "wm.LiveVariable",
-		"isDefault": true,
-		"dbSystem": "HSQLDB",
-		"_id": "wm-HrdbDepartmentData-wm.LiveVariable-1443179230277",
 		"package": "com.hrdb.Department",
-		"tableName": "DEPARTMENT",
-		"tableType": "TABLE",
 		"propertiesMap": {
 			"columns": [
 				{
@@ -298,7 +32,6 @@
 					"isPrimaryKey": true,
 					"notNull": true,
 					"length": 255,
-					"precision": 19,
 					"generator": "identity",
 					"isRelated": false,
 					"defaultValue": null
@@ -312,7 +45,6 @@
 					"isPrimaryKey": false,
 					"notNull": false,
 					"length": 255,
-					"precision": 19,
 					"generator": null,
 					"isRelated": false,
 					"defaultValue": null
@@ -326,7 +58,6 @@
 					"isPrimaryKey": false,
 					"notNull": false,
 					"length": 255,
-					"precision": 19,
 					"generator": null,
 					"isRelated": false,
 					"defaultValue": null
@@ -340,7 +71,6 @@
 					"isPrimaryKey": false,
 					"notNull": false,
 					"length": 255,
-					"precision": 19,
 					"generator": null,
 					"isRelated": false,
 					"defaultValue": null
@@ -354,7 +84,6 @@
 					"isPrimaryKey": false,
 					"notNull": false,
 					"length": 255,
-					"precision": 19,
 					"generator": null,
 					"isRelated": false,
 					"defaultValue": null
@@ -368,7 +97,6 @@
 					"isPrimaryKey": false,
 					"notNull": false,
 					"length": 255,
-					"precision": 19,
 					"generator": null,
 					"isRelated": false,
 					"defaultValue": null
@@ -382,7 +110,6 @@
 					"isPrimaryKey": false,
 					"notNull": false,
 					"length": 255,
-					"precision": 19,
 					"generator": null,
 					"isRelated": false,
 					"defaultValue": null
@@ -396,7 +123,6 @@
 					"isPrimaryKey": false,
 					"notNull": false,
 					"length": 20,
-					"precision": 19,
 					"generator": null,
 					"isRelated": false,
 					"defaultValue": null
@@ -410,7 +136,6 @@
 					"isPrimaryKey": false,
 					"notNull": false,
 					"length": 255,
-					"precision": 19,
 					"generator": null,
 					"isRelated": false,
 					"defaultValue": null
@@ -424,19 +149,158 @@
 					"isPrimaryKey": false,
 					"notNull": false,
 					"length": 255,
-					"precision": 19,
 					"generator": null,
 					"isRelated": false,
 					"defaultValue": null
 				}
 			],
-			"primaryKeys": [
+			"primaryFields": [
 				"deptid"
 			],
 			"entityName": "Department",
 			"fullyQualifiedName": "com.hrdb.Department",
 			"tableType": "TABLE"
-		}
+		},
+		"category": "wm.LiveVariable",
+		"_id": "wm-HrdbDepartmentData-wm.LiveVariable-1443179230277",
+		"isDefault": true,
+		"tableName": "DEPARTMENT",
+		"tableType": "TABLE",
+		"dbSystem": "HSQLDB"
+	},
+	"goToPage_camearWid": {
+		"name": "goToPage_camearWid",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "camearWid",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_camearWid-wm.NavigationVariable-1443176369363"
+	},
+	"goToPage_barcodeScan": {
+		"name": "goToPage_barcodeScan",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "barcodeScan",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_barcodeScan-wm.NavigationVariable-1443176572769"
+	},
+	"goToPage_AppInfo": {
+		"name": "goToPage_AppInfo",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "AppInfo",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_AppInfo-wm.NavigationVariable-1443148873989"
+	},
+	"HrdbUserData": {
+		"name": "HrdbUserData",
+		"type": "User",
+		"isList": true,
+		"owner": "App",
+		"dataSet": {
+			"dataValue": ""
+		},
+		"dataBinding": [],
+		"saveInPhonegap": false,
+		"firstRow": 0,
+		"maxResults": 20,
+		"designMaxResults": 10,
+		"operation": "read",
+		"startUpdate": false,
+		"autoUpdate": true,
+		"inFlightBehavior": "executeLast",
+		"transformationRequired": false,
+		"liveSource": "hrdb",
+		"ignoreCase": false,
+		"matchMode": "start",
+		"package": "com.hrdb.User",
+		"propertiesMap": {
+			"columns": [
+				{
+					"fieldName": "userid",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "USERID",
+					"isPrimaryKey": true,
+					"notNull": true,
+					"length": 255,
+					"generator": "identity",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "username",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "USERNAME",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 20,
+					"generator": null,
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "password",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "PASSWORD",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 20,
+					"generator": null,
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "role",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "ROLE",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 20,
+					"generator": null,
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "tenantid",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "TENANTID",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 255,
+					"generator": null,
+					"isRelated": false,
+					"defaultValue": null
+				}
+			],
+			"primaryFields": [
+				"userid"
+			],
+			"entityName": "User",
+			"fullyQualifiedName": "com.hrdb.User",
+			"tableType": "TABLE"
+		},
+		"category": "wm.LiveVariable",
+		"_id": "wm-HrdbUserData-wm.LiveVariable-1443179230286",
+		"isDefault": true,
+		"tableName": "USER",
+		"tableType": "TABLE",
+		"dbSystem": "HSQLDB"
 	},
 	"HrdbEmployeeData": {
 		"name": "HrdbEmployeeData",
@@ -446,13 +310,7 @@
 		"dataSet": {
 			"dataValue": ""
 		},
-		"dataBinding": [
-			{
-				"name": "dataBinding",
-				"type": "object",
-				"fields": []
-			}
-		],
+		"dataBinding": [],
 		"saveInPhonegap": false,
 		"firstRow": 0,
 		"maxResults": 20,
@@ -465,191 +323,10 @@
 		"liveSource": "hrdb",
 		"ignoreCase": false,
 		"matchMode": "start",
-		"category": "wm.LiveVariable",
-		"isDefault": true,
-		"dbSystem": "HSQLDB",
-		"_id": "wm-HrdbEmployeeData-wm.LiveVariable-1443179230282",
+		"bindCount": 1,
 		"package": "com.hrdb.Employee",
-		"tableName": "EMPLOYEE",
-		"tableType": "TABLE",
-		"properties": [
-			"department",
-			"employeeByManagerid",
-			"employeesForManagerid",
-			null
-		],
-		"relatedTables": [
-			{
-				"columnName": "department",
-				"relationName": "department",
-				"type": "Department",
-				"package": "com.hrdb.Employee",
-				"watchOn": "HrdbDepartmentData"
-			},
-			{
-				"columnName": "employeeByManagerid",
-				"relationName": "employeeByManagerid",
-				"type": "Employee",
-				"package": "com.hrdb.Employee",
-				"watchOn": "HrdbEmployeeData"
-			},
-			{
-				"columnName": "employeeByManagerid",
-				"relationName": "employeesForManagerid",
-				"type": "Employee",
-				"package": "com.hrdb.Employee",
-				"watchOn": "HrdbEmployeeData"
-			},
-			{
-				"columnName": "employeeByManagerid",
-				"relationName": null,
-				"type": "Employee",
-				"package": "com.hrdb.Employee",
-				"watchOn": "HrdbEmployeeData"
-			}
-		],
 		"propertiesMap": {
 			"columns": [
-				{
-					"fieldName": "eid",
-					"type": "integer",
-					"hibernateType": "integer",
-					"fullyQualifiedType": "integer",
-					"columnName": "EID",
-					"isPrimaryKey": true,
-					"notNull": true,
-					"length": 255,
-					"precision": 19,
-					"generator": "identity",
-					"isRelated": false,
-					"defaultValue": null
-				},
-				{
-					"fieldName": "firstname",
-					"type": "string",
-					"hibernateType": "string",
-					"fullyQualifiedType": "string",
-					"columnName": "FIRSTNAME",
-					"isPrimaryKey": false,
-					"notNull": false,
-					"length": 255,
-					"precision": 19,
-					"generator": null,
-					"isRelated": false,
-					"defaultValue": null
-				},
-				{
-					"fieldName": "lastname",
-					"type": "string",
-					"hibernateType": "string",
-					"fullyQualifiedType": "string",
-					"columnName": "LASTNAME",
-					"isPrimaryKey": false,
-					"notNull": false,
-					"length": 255,
-					"precision": 19,
-					"generator": null,
-					"isRelated": false,
-					"defaultValue": null
-				},
-				{
-					"fieldName": "street",
-					"type": "string",
-					"hibernateType": "string",
-					"fullyQualifiedType": "string",
-					"columnName": "STREET",
-					"isPrimaryKey": false,
-					"notNull": false,
-					"length": 255,
-					"precision": 19,
-					"generator": null,
-					"isRelated": false,
-					"defaultValue": null
-				},
-				{
-					"fieldName": "city",
-					"type": "string",
-					"hibernateType": "string",
-					"fullyQualifiedType": "string",
-					"columnName": "CITY",
-					"isPrimaryKey": false,
-					"notNull": false,
-					"length": 255,
-					"precision": 19,
-					"generator": null,
-					"isRelated": false,
-					"defaultValue": null
-				},
-				{
-					"fieldName": "state",
-					"type": "string",
-					"hibernateType": "string",
-					"fullyQualifiedType": "string",
-					"columnName": "STATE",
-					"isPrimaryKey": false,
-					"notNull": false,
-					"length": 2,
-					"precision": 19,
-					"generator": null,
-					"isRelated": false,
-					"defaultValue": null
-				},
-				{
-					"fieldName": "zip",
-					"type": "string",
-					"hibernateType": "string",
-					"fullyQualifiedType": "string",
-					"columnName": "ZIP",
-					"isPrimaryKey": false,
-					"notNull": false,
-					"length": 255,
-					"precision": 19,
-					"generator": null,
-					"isRelated": false,
-					"defaultValue": null
-				},
-				{
-					"fieldName": "birthdate",
-					"type": "date",
-					"hibernateType": "date",
-					"fullyQualifiedType": "date",
-					"columnName": "BIRTHDATE",
-					"isPrimaryKey": false,
-					"notNull": false,
-					"length": 10,
-					"precision": 19,
-					"generator": null,
-					"isRelated": false,
-					"defaultValue": null
-				},
-				{
-					"fieldName": "picurl",
-					"type": "string",
-					"hibernateType": "string",
-					"fullyQualifiedType": "string",
-					"columnName": "PICURL",
-					"isPrimaryKey": false,
-					"notNull": false,
-					"length": 255,
-					"precision": 19,
-					"generator": null,
-					"isRelated": false,
-					"defaultValue": null
-				},
-				{
-					"fieldName": "twitterid",
-					"type": "string",
-					"hibernateType": "string",
-					"fullyQualifiedType": "string",
-					"columnName": "TWITTERID",
-					"isPrimaryKey": false,
-					"notNull": false,
-					"length": 40,
-					"precision": 19,
-					"generator": null,
-					"isRelated": false,
-					"defaultValue": null
-				},
 				{
 					"fieldName": "department",
 					"type": "integer",
@@ -659,10 +336,10 @@
 					"isPrimaryKey": false,
 					"notNull": true,
 					"length": 255,
-					"precision": 19,
 					"generator": "assigned",
 					"isRelated": true,
 					"defaultValue": null,
+					"targetTable": "DEPARTMENT",
 					"relatedTableName": "DEPARTMENT",
 					"relatedEntityName": "Department",
 					"columns": [
@@ -675,7 +352,6 @@
 							"isPrimaryKey": true,
 							"notNull": true,
 							"length": 255,
-							"precision": 19,
 							"generator": "identity",
 							"isRelated": false,
 							"defaultValue": null
@@ -689,7 +365,6 @@
 							"isPrimaryKey": false,
 							"notNull": false,
 							"length": 255,
-							"precision": 19,
 							"generator": null,
 							"isRelated": false,
 							"defaultValue": null
@@ -703,7 +378,6 @@
 							"isPrimaryKey": false,
 							"notNull": false,
 							"length": 255,
-							"precision": 19,
 							"generator": null,
 							"isRelated": false,
 							"defaultValue": null
@@ -717,7 +391,6 @@
 							"isPrimaryKey": false,
 							"notNull": false,
 							"length": 255,
-							"precision": 19,
 							"generator": null,
 							"isRelated": false,
 							"defaultValue": null
@@ -731,7 +404,6 @@
 							"isPrimaryKey": false,
 							"notNull": false,
 							"length": 255,
-							"precision": 19,
 							"generator": null,
 							"isRelated": false,
 							"defaultValue": null
@@ -745,7 +417,6 @@
 							"isPrimaryKey": false,
 							"notNull": false,
 							"length": 255,
-							"precision": 19,
 							"generator": null,
 							"isRelated": false,
 							"defaultValue": null
@@ -759,7 +430,6 @@
 							"isPrimaryKey": false,
 							"notNull": false,
 							"length": 255,
-							"precision": 19,
 							"generator": null,
 							"isRelated": false,
 							"defaultValue": null
@@ -773,7 +443,6 @@
 							"isPrimaryKey": false,
 							"notNull": false,
 							"length": 20,
-							"precision": 19,
 							"generator": null,
 							"isRelated": false,
 							"defaultValue": null
@@ -787,7 +456,6 @@
 							"isPrimaryKey": false,
 							"notNull": false,
 							"length": 255,
-							"precision": 19,
 							"generator": null,
 							"isRelated": false,
 							"defaultValue": null
@@ -801,7 +469,6 @@
 							"isPrimaryKey": false,
 							"notNull": false,
 							"length": 255,
-							"precision": 19,
 							"generator": null,
 							"isRelated": false,
 							"defaultValue": null
@@ -819,153 +486,13 @@
 					"isPrimaryKey": false,
 					"notNull": false,
 					"length": 255,
-					"precision": 19,
 					"generator": null,
 					"isRelated": true,
 					"defaultValue": null,
+					"targetTable": "EMPLOYEE",
 					"relatedTableName": "EMPLOYEE",
 					"relatedEntityName": "Employee",
 					"columns": [
-						{
-							"fieldName": "eid",
-							"type": "integer",
-							"hibernateType": "integer",
-							"fullyQualifiedType": "integer",
-							"columnName": "EID",
-							"isPrimaryKey": true,
-							"notNull": true,
-							"length": 255,
-							"precision": 19,
-							"generator": "identity",
-							"isRelated": false,
-							"defaultValue": null
-						},
-						{
-							"fieldName": "firstname",
-							"type": "string",
-							"hibernateType": "string",
-							"fullyQualifiedType": "string",
-							"columnName": "FIRSTNAME",
-							"isPrimaryKey": false,
-							"notNull": false,
-							"length": 255,
-							"precision": 19,
-							"generator": null,
-							"isRelated": false,
-							"defaultValue": null
-						},
-						{
-							"fieldName": "lastname",
-							"type": "string",
-							"hibernateType": "string",
-							"fullyQualifiedType": "string",
-							"columnName": "LASTNAME",
-							"isPrimaryKey": false,
-							"notNull": false,
-							"length": 255,
-							"precision": 19,
-							"generator": null,
-							"isRelated": false,
-							"defaultValue": null
-						},
-						{
-							"fieldName": "street",
-							"type": "string",
-							"hibernateType": "string",
-							"fullyQualifiedType": "string",
-							"columnName": "STREET",
-							"isPrimaryKey": false,
-							"notNull": false,
-							"length": 255,
-							"precision": 19,
-							"generator": null,
-							"isRelated": false,
-							"defaultValue": null
-						},
-						{
-							"fieldName": "city",
-							"type": "string",
-							"hibernateType": "string",
-							"fullyQualifiedType": "string",
-							"columnName": "CITY",
-							"isPrimaryKey": false,
-							"notNull": false,
-							"length": 255,
-							"precision": 19,
-							"generator": null,
-							"isRelated": false,
-							"defaultValue": null
-						},
-						{
-							"fieldName": "state",
-							"type": "string",
-							"hibernateType": "string",
-							"fullyQualifiedType": "string",
-							"columnName": "STATE",
-							"isPrimaryKey": false,
-							"notNull": false,
-							"length": 2,
-							"precision": 19,
-							"generator": null,
-							"isRelated": false,
-							"defaultValue": null
-						},
-						{
-							"fieldName": "zip",
-							"type": "string",
-							"hibernateType": "string",
-							"fullyQualifiedType": "string",
-							"columnName": "ZIP",
-							"isPrimaryKey": false,
-							"notNull": false,
-							"length": 255,
-							"precision": 19,
-							"generator": null,
-							"isRelated": false,
-							"defaultValue": null
-						},
-						{
-							"fieldName": "birthdate",
-							"type": "date",
-							"hibernateType": "date",
-							"fullyQualifiedType": "date",
-							"columnName": "BIRTHDATE",
-							"isPrimaryKey": false,
-							"notNull": false,
-							"length": 10,
-							"precision": 19,
-							"generator": null,
-							"isRelated": false,
-							"defaultValue": null
-						},
-						{
-							"fieldName": "picurl",
-							"type": "string",
-							"hibernateType": "string",
-							"fullyQualifiedType": "string",
-							"columnName": "PICURL",
-							"isPrimaryKey": false,
-							"notNull": false,
-							"length": 255,
-							"precision": 19,
-							"generator": null,
-							"isRelated": false,
-							"defaultValue": null
-						},
-						{
-							"fieldName": "twitterid",
-							"type": "string",
-							"hibernateType": "string",
-							"fullyQualifiedType": "string",
-							"columnName": "TWITTERID",
-							"isPrimaryKey": false,
-							"notNull": false,
-							"length": 40,
-							"precision": 19,
-							"generator": null,
-							"isRelated": false,
-							"defaultValue": null
-						},
 						{
 							"fieldName": "department",
 							"type": "integer",
@@ -975,10 +502,10 @@
 							"isPrimaryKey": false,
 							"notNull": true,
 							"length": 255,
-							"precision": 19,
 							"generator": "assigned",
 							"isRelated": true,
 							"defaultValue": null,
+							"targetTable": "DEPARTMENT",
 							"relatedTableName": "DEPARTMENT",
 							"relatedEntityName": "Department",
 							"columns": [
@@ -991,7 +518,6 @@
 									"isPrimaryKey": true,
 									"notNull": true,
 									"length": 255,
-									"precision": 19,
 									"generator": "identity",
 									"isRelated": false,
 									"defaultValue": null
@@ -1005,7 +531,6 @@
 									"isPrimaryKey": false,
 									"notNull": false,
 									"length": 255,
-									"precision": 19,
 									"generator": null,
 									"isRelated": false,
 									"defaultValue": null
@@ -1019,7 +544,6 @@
 									"isPrimaryKey": false,
 									"notNull": false,
 									"length": 255,
-									"precision": 19,
 									"generator": null,
 									"isRelated": false,
 									"defaultValue": null
@@ -1033,7 +557,6 @@
 									"isPrimaryKey": false,
 									"notNull": false,
 									"length": 255,
-									"precision": 19,
 									"generator": null,
 									"isRelated": false,
 									"defaultValue": null
@@ -1047,7 +570,6 @@
 									"isPrimaryKey": false,
 									"notNull": false,
 									"length": 255,
-									"precision": 19,
 									"generator": null,
 									"isRelated": false,
 									"defaultValue": null
@@ -1061,7 +583,6 @@
 									"isPrimaryKey": false,
 									"notNull": false,
 									"length": 255,
-									"precision": 19,
 									"generator": null,
 									"isRelated": false,
 									"defaultValue": null
@@ -1075,7 +596,6 @@
 									"isPrimaryKey": false,
 									"notNull": false,
 									"length": 255,
-									"precision": 19,
 									"generator": null,
 									"isRelated": false,
 									"defaultValue": null
@@ -1089,7 +609,6 @@
 									"isPrimaryKey": false,
 									"notNull": false,
 									"length": 20,
-									"precision": 19,
 									"generator": null,
 									"isRelated": false,
 									"defaultValue": null
@@ -1103,7 +622,6 @@
 									"isPrimaryKey": false,
 									"notNull": false,
 									"length": 255,
-									"precision": 19,
 									"generator": null,
 									"isRelated": false,
 									"defaultValue": null
@@ -1117,7 +635,6 @@
 									"isPrimaryKey": false,
 									"notNull": false,
 									"length": 255,
-									"precision": 19,
 									"generator": null,
 									"isRelated": false,
 									"defaultValue": null
@@ -1135,275 +652,13 @@
 							"isPrimaryKey": false,
 							"notNull": false,
 							"length": 255,
-							"precision": 19,
 							"generator": null,
 							"isRelated": true,
 							"defaultValue": null,
+							"targetTable": "EMPLOYEE",
 							"relatedTableName": "EMPLOYEE",
 							"relatedEntityName": "Employee"
 						},
-						{
-							"fieldName": "tenantid",
-							"type": "integer",
-							"hibernateType": "integer",
-							"fullyQualifiedType": "integer",
-							"columnName": "TENANTID",
-							"isPrimaryKey": false,
-							"notNull": false,
-							"length": 255,
-							"precision": 19,
-							"generator": null,
-							"isRelated": false,
-							"defaultValue": null
-						}
-					],
-					"relatedFieldName": "employeeByManagerid.eid"
-				},
-				{
-					"fieldName": "tenantid",
-					"type": "integer",
-					"hibernateType": "integer",
-					"fullyQualifiedType": "integer",
-					"columnName": "TENANTID",
-					"isPrimaryKey": false,
-					"notNull": false,
-					"length": 255,
-					"precision": 19,
-					"generator": null,
-					"isRelated": false,
-					"defaultValue": null
-				}
-			],
-			"primaryKeys": [
-				"eid"
-			],
-			"entityName": "Employee",
-			"fullyQualifiedName": "com.hrdb.Employee",
-			"tableType": "TABLE"
-		},
-		"bindCount": 1
-	},
-	"HrdbUserData": {
-		"name": "HrdbUserData",
-		"type": "User",
-		"isList": true,
-		"owner": "App",
-		"dataSet": {
-			"dataValue": ""
-		},
-		"dataBinding": [
-			{
-				"name": "dataBinding",
-				"type": "object",
-				"fields": []
-			}
-		],
-		"saveInPhonegap": false,
-		"firstRow": 0,
-		"maxResults": 20,
-		"designMaxResults": 10,
-		"operation": "read",
-		"startUpdate": false,
-		"autoUpdate": true,
-		"inFlightBehavior": "executeLast",
-		"transformationRequired": false,
-		"liveSource": "hrdb",
-		"ignoreCase": false,
-		"matchMode": "start",
-		"category": "wm.LiveVariable",
-		"isDefault": true,
-		"dbSystem": "HSQLDB",
-		"_id": "wm-HrdbUserData-wm.LiveVariable-1443179230286",
-		"package": "com.hrdb.User",
-		"tableName": "USER",
-		"tableType": "TABLE",
-		"propertiesMap": {
-			"columns": [
-				{
-					"fieldName": "userid",
-					"type": "integer",
-					"hibernateType": "integer",
-					"fullyQualifiedType": "integer",
-					"columnName": "USERID",
-					"isPrimaryKey": true,
-					"notNull": true,
-					"length": 255,
-					"precision": 19,
-					"generator": "identity",
-					"isRelated": false,
-					"defaultValue": null
-				},
-				{
-					"fieldName": "username",
-					"type": "string",
-					"hibernateType": "string",
-					"fullyQualifiedType": "string",
-					"columnName": "USERNAME",
-					"isPrimaryKey": false,
-					"notNull": false,
-					"length": 20,
-					"precision": 19,
-					"generator": null,
-					"isRelated": false,
-					"defaultValue": null
-				},
-				{
-					"fieldName": "password",
-					"type": "string",
-					"hibernateType": "string",
-					"fullyQualifiedType": "string",
-					"columnName": "PASSWORD",
-					"isPrimaryKey": false,
-					"notNull": false,
-					"length": 20,
-					"precision": 19,
-					"generator": null,
-					"isRelated": false,
-					"defaultValue": null
-				},
-				{
-					"fieldName": "role",
-					"type": "string",
-					"hibernateType": "string",
-					"fullyQualifiedType": "string",
-					"columnName": "ROLE",
-					"isPrimaryKey": false,
-					"notNull": false,
-					"length": 20,
-					"precision": 19,
-					"generator": null,
-					"isRelated": false,
-					"defaultValue": null
-				},
-				{
-					"fieldName": "tenantid",
-					"type": "integer",
-					"hibernateType": "integer",
-					"fullyQualifiedType": "integer",
-					"columnName": "TENANTID",
-					"isPrimaryKey": false,
-					"notNull": false,
-					"length": 255,
-					"precision": 19,
-					"generator": null,
-					"isRelated": false,
-					"defaultValue": null
-				}
-			],
-			"primaryKeys": [
-				"userid"
-			],
-			"entityName": "User",
-			"fullyQualifiedName": "com.hrdb.User",
-			"tableType": "TABLE"
-		}
-	},
-	"HrdbVacationData": {
-		"name": "HrdbVacationData",
-		"type": "Vacation",
-		"isList": true,
-		"owner": "App",
-		"dataSet": {
-			"dataValue": ""
-		},
-		"dataBinding": [
-			{
-				"name": "dataBinding",
-				"type": "object",
-				"fields": []
-			}
-		],
-		"saveInPhonegap": false,
-		"firstRow": 0,
-		"maxResults": 20,
-		"designMaxResults": 10,
-		"operation": "read",
-		"startUpdate": false,
-		"autoUpdate": true,
-		"inFlightBehavior": "executeLast",
-		"transformationRequired": false,
-		"liveSource": "hrdb",
-		"ignoreCase": false,
-		"matchMode": "start",
-		"category": "wm.LiveVariable",
-		"isDefault": true,
-		"dbSystem": "HSQLDB",
-		"_id": "wm-HrdbVacationData-wm.LiveVariable-1443179230290",
-		"package": "com.hrdb.Vacation",
-		"tableName": "VACATION",
-		"tableType": "TABLE",
-		"properties": [
-			"employee"
-		],
-		"relatedTables": [
-			{
-				"columnName": "employee",
-				"relationName": "employee",
-				"type": "Employee",
-				"package": "com.hrdb.Vacation",
-				"watchOn": "HrdbEmployeeData"
-			}
-		],
-		"propertiesMap": {
-			"columns": [
-				{
-					"fieldName": "id",
-					"type": "integer",
-					"hibernateType": "integer",
-					"fullyQualifiedType": "integer",
-					"columnName": "ID",
-					"isPrimaryKey": true,
-					"notNull": true,
-					"length": 255,
-					"precision": 19,
-					"generator": "identity",
-					"isRelated": false,
-					"defaultValue": null
-				},
-				{
-					"fieldName": "startdate",
-					"type": "date",
-					"hibernateType": "date",
-					"fullyQualifiedType": "date",
-					"columnName": "STARTDATE",
-					"isPrimaryKey": false,
-					"notNull": false,
-					"length": 10,
-					"precision": 19,
-					"generator": null,
-					"isRelated": false,
-					"defaultValue": null
-				},
-				{
-					"fieldName": "enddate",
-					"type": "date",
-					"hibernateType": "date",
-					"fullyQualifiedType": "date",
-					"columnName": "ENDDATE",
-					"isPrimaryKey": false,
-					"notNull": false,
-					"length": 10,
-					"precision": 19,
-					"generator": null,
-					"isRelated": false,
-					"defaultValue": null
-				},
-				{
-					"fieldName": "employee",
-					"type": "integer",
-					"hibernateType": "integer",
-					"fullyQualifiedType": "integer",
-					"columnName": "EMPID",
-					"isPrimaryKey": false,
-					"notNull": true,
-					"length": 255,
-					"precision": 19,
-					"generator": "assigned",
-					"isRelated": true,
-					"defaultValue": null,
-					"relatedTableName": "EMPLOYEE",
-					"relatedEntityName": "Employee",
-					"columns": [
 						{
 							"fieldName": "eid",
 							"type": "integer",
@@ -1413,7 +668,6 @@
 							"isPrimaryKey": true,
 							"notNull": true,
 							"length": 255,
-							"precision": 19,
 							"generator": "identity",
 							"isRelated": false,
 							"defaultValue": null
@@ -1427,7 +681,6 @@
 							"isPrimaryKey": false,
 							"notNull": false,
 							"length": 255,
-							"precision": 19,
 							"generator": null,
 							"isRelated": false,
 							"defaultValue": null
@@ -1441,7 +694,6 @@
 							"isPrimaryKey": false,
 							"notNull": false,
 							"length": 255,
-							"precision": 19,
 							"generator": null,
 							"isRelated": false,
 							"defaultValue": null
@@ -1455,7 +707,6 @@
 							"isPrimaryKey": false,
 							"notNull": false,
 							"length": 255,
-							"precision": 19,
 							"generator": null,
 							"isRelated": false,
 							"defaultValue": null
@@ -1469,7 +720,6 @@
 							"isPrimaryKey": false,
 							"notNull": false,
 							"length": 255,
-							"precision": 19,
 							"generator": null,
 							"isRelated": false,
 							"defaultValue": null
@@ -1483,7 +733,6 @@
 							"isPrimaryKey": false,
 							"notNull": false,
 							"length": 2,
-							"precision": 19,
 							"generator": null,
 							"isRelated": false,
 							"defaultValue": null
@@ -1497,7 +746,6 @@
 							"isPrimaryKey": false,
 							"notNull": false,
 							"length": 255,
-							"precision": 19,
 							"generator": null,
 							"isRelated": false,
 							"defaultValue": null
@@ -1511,7 +759,6 @@
 							"isPrimaryKey": false,
 							"notNull": false,
 							"length": 10,
-							"precision": 19,
 							"generator": null,
 							"isRelated": false,
 							"defaultValue": null
@@ -1525,7 +772,6 @@
 							"isPrimaryKey": false,
 							"notNull": false,
 							"length": 255,
-							"precision": 19,
 							"generator": null,
 							"isRelated": false,
 							"defaultValue": null
@@ -1539,37 +785,8 @@
 							"isPrimaryKey": false,
 							"notNull": false,
 							"length": 40,
-							"precision": 19,
 							"generator": null,
 							"isRelated": false,
-							"defaultValue": null
-						},
-						{
-							"fieldName": "department",
-							"type": "integer",
-							"hibernateType": "integer",
-							"fullyQualifiedType": "integer",
-							"columnName": "DEPTID",
-							"isPrimaryKey": false,
-							"notNull": true,
-							"length": 255,
-							"precision": 19,
-							"generator": "assigned",
-							"isRelated": true,
-							"defaultValue": null
-						},
-						{
-							"fieldName": "employeeByManagerid",
-							"type": "integer",
-							"hibernateType": "integer",
-							"fullyQualifiedType": "integer",
-							"columnName": "MANAGERID",
-							"isPrimaryKey": false,
-							"notNull": false,
-							"length": 255,
-							"precision": 19,
-							"generator": null,
-							"isRelated": true,
 							"defaultValue": null
 						},
 						{
@@ -1581,14 +798,142 @@
 							"isPrimaryKey": false,
 							"notNull": false,
 							"length": 255,
-							"precision": 19,
 							"generator": null,
 							"isRelated": false,
 							"defaultValue": null
 						}
 					],
-					"relatedFieldName": "employee.eid",
-					"isList": false
+					"relatedFieldName": "employeeByManagerid.eid"
+				},
+				{
+					"fieldName": "eid",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "EID",
+					"isPrimaryKey": true,
+					"notNull": true,
+					"length": 255,
+					"generator": "identity",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "firstname",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "FIRSTNAME",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 255,
+					"generator": null,
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "lastname",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "LASTNAME",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 255,
+					"generator": null,
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "street",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "STREET",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 255,
+					"generator": null,
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "city",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "CITY",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 255,
+					"generator": null,
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "state",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "STATE",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 2,
+					"generator": null,
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "zip",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "ZIP",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 255,
+					"generator": null,
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "birthdate",
+					"type": "date",
+					"hibernateType": "date",
+					"fullyQualifiedType": "date",
+					"columnName": "BIRTHDATE",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 10,
+					"generator": null,
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "picurl",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "PICURL",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 255,
+					"generator": null,
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "twitterid",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "TWITTERID",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 40,
+					"generator": null,
+					"isRelated": false,
+					"defaultValue": null
 				},
 				{
 					"fieldName": "tenantid",
@@ -1599,41 +944,558 @@
 					"isPrimaryKey": false,
 					"notNull": false,
 					"length": 255,
-					"precision": 19,
 					"generator": null,
 					"isRelated": false,
 					"defaultValue": null
 				}
 			],
-			"primaryKeys": [
+			"primaryFields": [
+				"eid"
+			],
+			"entityName": "Employee",
+			"fullyQualifiedName": "com.hrdb.Employee",
+			"tableType": "TABLE"
+		},
+		"_id": "wm-HrdbEmployeeData-wm.LiveVariable-1443179230282",
+		"isDefault": true,
+		"tableName": "EMPLOYEE",
+		"relatedTables": [
+			{
+				"relationName": "department",
+				"watchOn": "HrdbDepartmentData",
+				"package": "com.hrdb.Employee",
+				"columnName": "department",
+				"type": "Department"
+			},
+			{
+				"relationName": "employeeByManagerid",
+				"watchOn": "HrdbEmployeeData",
+				"package": "com.hrdb.Employee",
+				"columnName": "employeeByManagerid",
+				"type": "Employee"
+			},
+			{
+				"relationName": "employeesForManagerid",
+				"watchOn": "HrdbEmployeeData",
+				"package": "com.hrdb.Employee",
+				"columnName": "employeeByManagerid",
+				"type": "Employee"
+			},
+			{
+				"relationName": null,
+				"watchOn": "HrdbEmployeeData",
+				"package": "com.hrdb.Employee",
+				"columnName": "employeeByManagerid",
+				"type": "Employee"
+			}
+		],
+		"dbSystem": "HSQLDB",
+		"properties": [
+			"department",
+			"employeeByManagerid",
+			"employeesForManagerid",
+			null
+		],
+		"category": "wm.LiveVariable",
+		"tableType": "TABLE"
+	},
+	"goToPage_fileUploadWid": {
+		"name": "goToPage_fileUploadWid",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "fileUploadWid",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_fileUploadWid-wm.NavigationVariable-1443176975048"
+	},
+	"goToPage_Device": {
+		"name": "goToPage_Device",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Device",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Device-wm.NavigationVariable-1443147834709"
+	},
+	"goToPage_segmented": {
+		"name": "goToPage_segmented",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "segmented",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_segmented-wm.NavigationVariable-1443174774472"
+	},
+	"HrdbVacationData": {
+		"name": "HrdbVacationData",
+		"type": "Vacation",
+		"isList": true,
+		"owner": "App",
+		"dataSet": {
+			"dataValue": ""
+		},
+		"dataBinding": [],
+		"saveInPhonegap": false,
+		"firstRow": 0,
+		"maxResults": 20,
+		"designMaxResults": 10,
+		"operation": "read",
+		"startUpdate": false,
+		"autoUpdate": true,
+		"inFlightBehavior": "executeLast",
+		"transformationRequired": false,
+		"liveSource": "hrdb",
+		"ignoreCase": false,
+		"matchMode": "start",
+		"package": "com.hrdb.Vacation",
+		"propertiesMap": {
+			"columns": [
+				{
+					"fieldName": "employee",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "EMPID",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": true,
+					"defaultValue": null,
+					"targetTable": "EMPLOYEE",
+					"relatedTableName": "EMPLOYEE",
+					"relatedEntityName": "Employee",
+					"columns": [
+						{
+							"fieldName": "department",
+							"type": "integer",
+							"hibernateType": "integer",
+							"fullyQualifiedType": "integer",
+							"columnName": "DEPTID",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": true,
+							"defaultValue": null,
+							"targetTable": "DEPARTMENT"
+						},
+						{
+							"fieldName": "employeeByManagerid",
+							"type": "integer",
+							"hibernateType": "integer",
+							"fullyQualifiedType": "integer",
+							"columnName": "MANAGERID",
+							"isPrimaryKey": false,
+							"notNull": false,
+							"length": 255,
+							"generator": null,
+							"isRelated": true,
+							"defaultValue": null,
+							"targetTable": "EMPLOYEE"
+						},
+						{
+							"fieldName": "eid",
+							"type": "integer",
+							"hibernateType": "integer",
+							"fullyQualifiedType": "integer",
+							"columnName": "EID",
+							"isPrimaryKey": true,
+							"notNull": true,
+							"length": 255,
+							"generator": "identity",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "firstname",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "FIRSTNAME",
+							"isPrimaryKey": false,
+							"notNull": false,
+							"length": 255,
+							"generator": null,
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "lastname",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "LASTNAME",
+							"isPrimaryKey": false,
+							"notNull": false,
+							"length": 255,
+							"generator": null,
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "street",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "STREET",
+							"isPrimaryKey": false,
+							"notNull": false,
+							"length": 255,
+							"generator": null,
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "city",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "CITY",
+							"isPrimaryKey": false,
+							"notNull": false,
+							"length": 255,
+							"generator": null,
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "state",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "STATE",
+							"isPrimaryKey": false,
+							"notNull": false,
+							"length": 2,
+							"generator": null,
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "zip",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "ZIP",
+							"isPrimaryKey": false,
+							"notNull": false,
+							"length": 255,
+							"generator": null,
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "birthdate",
+							"type": "date",
+							"hibernateType": "date",
+							"fullyQualifiedType": "date",
+							"columnName": "BIRTHDATE",
+							"isPrimaryKey": false,
+							"notNull": false,
+							"length": 10,
+							"generator": null,
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "picurl",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "PICURL",
+							"isPrimaryKey": false,
+							"notNull": false,
+							"length": 255,
+							"generator": null,
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "twitterid",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "TWITTERID",
+							"isPrimaryKey": false,
+							"notNull": false,
+							"length": 40,
+							"generator": null,
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "tenantid",
+							"type": "integer",
+							"hibernateType": "integer",
+							"fullyQualifiedType": "integer",
+							"columnName": "TENANTID",
+							"isPrimaryKey": false,
+							"notNull": false,
+							"length": 255,
+							"generator": null,
+							"isRelated": false,
+							"defaultValue": null
+						}
+					],
+					"relatedFieldName": "employee.eid",
+					"isList": false
+				},
+				{
+					"fieldName": "id",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "ID",
+					"isPrimaryKey": true,
+					"notNull": true,
+					"length": 255,
+					"generator": "identity",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "startdate",
+					"type": "date",
+					"hibernateType": "date",
+					"fullyQualifiedType": "date",
+					"columnName": "STARTDATE",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 10,
+					"generator": null,
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "enddate",
+					"type": "date",
+					"hibernateType": "date",
+					"fullyQualifiedType": "date",
+					"columnName": "ENDDATE",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 10,
+					"generator": null,
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "tenantid",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "TENANTID",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 255,
+					"generator": null,
+					"isRelated": false,
+					"defaultValue": null
+				}
+			],
+			"primaryFields": [
 				"id"
 			],
 			"entityName": "Vacation",
 			"fullyQualifiedName": "com.hrdb.Vacation",
 			"tableType": "TABLE"
-		}
+		},
+		"_id": "wm-HrdbVacationData-wm.LiveVariable-1443179230290",
+		"isDefault": true,
+		"tableName": "VACATION",
+		"relatedTables": [
+			{
+				"relationName": "employee",
+				"watchOn": "HrdbEmployeeData",
+				"package": "com.hrdb.Vacation",
+				"columnName": "employee",
+				"type": "Employee"
+			}
+		],
+		"dbSystem": "HSQLDB",
+		"properties": [
+			"employee"
+		],
+		"category": "wm.LiveVariable",
+		"tableType": "TABLE"
 	},
-	"takePicture": {
-		"name": "takePicture",
+	"FileServiceUploadFile": {
+		"name": "FileServiceUploadFile",
+		"type": "string",
+		"isList": false,
 		"owner": "App",
 		"dataSet": {
-			"imagePath": "resources/images/imagelists/default-image.png"
+			"dataValue": ""
 		},
-		"dataBinding": {},
-		"service": "camera",
-		"operation": "captureImage",
+		"dataBinding": [],
+		"saveInPhonegap": false,
+		"firstRow": 0,
+		"maxResults": 20,
+		"designMaxResults": 10,
+		"service": "FileService",
+		"operation": "uploadFile",
 		"startUpdate": false,
-		"imageQuality": 80,
-		"imageEncodingType": "0",
-		"allowImageEdit": false,
-		"correctOrientation": true,
-		"saveToPhotoAlbum": false,
-		"geolocationHighAccuracy": true,
-		"geolocationMaximumAge": 3,
-		"geolocationTimeout": 5,
-		"onSuccess": "FileServiceUploadFile",
-		"vibrationtime": 2,
-		"category": "wm.DeviceVariable",
-		"_id": "wm-takePicture-wm.DeviceVariable-1443149724998"
+		"autoUpdate": true,
+		"inFlightBehavior": "executeLast",
+		"transformationRequired": false,
+		"wmServiceOperationInfo": {
+			"relativePath": "/file/uploadFile",
+			"methodType": "post",
+			"name": "uploadFile",
+			"parameters": [
+				{
+					"name": "formdata",
+					"parameterType": "formData"
+				},
+				{
+					"name": "relativePath",
+					"parameterType": "query"
+				}
+			],
+			"consumes": [
+				"multipart/form-data"
+			]
+		},
+		"serviceType": "JavaService",
+		"category": "wm.ServiceVariable",
+		"_id": "wm-FileServiceUploadFile-wm.ServiceVariable-1443174441693",
+		"isDefault": true
+	},
+	"goToPage_Contacts": {
+		"name": "goToPage_Contacts",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Contacts",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Contacts-wm.NavigationVariable-1443149019535"
+	},
+	"goToPage_fileUploadVar": {
+		"name": "goToPage_fileUploadVar",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "fileUploadVar",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_fileUploadVar-wm.NavigationVariable-1443150797676"
+	},
+	"goToPage_dates": {
+		"name": "goToPage_dates",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "dates",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_dates-wm.NavigationVariable-1443176756965"
+	},
+	"goToPage_GeoLocation": {
+		"name": "goToPage_GeoLocation",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "GeoLocation",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_GeoLocation-wm.NavigationVariable-1443149348458"
+	},
+	"goToPage_scanBarcode": {
+		"name": "goToPage_scanBarcode",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "scanBarcode",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_scanBarcode-wm.NavigationVariable-1443150663980"
+	},
+	"goToPage_captureVideoWid": {
+		"name": "goToPage_captureVideoWid",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "captureVideoWid",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_captureVideoWid-wm.NavigationVariable-1443176458310"
+	},
+	"goToPage-Main": {
+		"name": "goToPage-Main",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Main",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage-Main-wm.NavigationVariable1389180517517"
+	},
+	"goToPage_tabbar": {
+		"name": "goToPage_tabbar",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "tabbar",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_tabbar-wm.NavigationVariable-1443174867034"
+	},
+	"supportedLocale": {
+		"name": "supportedLocale",
+		"type": "string",
+		"isList": false,
+		"owner": "App",
+		"dataSet": {
+			"en": "English"
+		},
+		"dataBinding": [],
+		"saveInPhonegap": false,
+		"category": "wm.Variable",
+		"_id": "wm-supportedLocale-wm.Variable1402640443182"
+	},
+	"goToPage_CaptureVideoVar": {
+		"name": "goToPage_CaptureVideoVar",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "CaptureVideoVar",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_CaptureVideoVar-wm.NavigationVariable-1443149766161"
+	},
+	"goToPage_Calendar": {
+		"name": "goToPage_Calendar",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Calendar",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Calendar-wm.NavigationVariable-1443149226000"
+	},
+	"goToPage_mediaList": {
+		"name": "goToPage_mediaList",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "mediaList",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_mediaList-wm.NavigationVariable-1443174907356"
+	},
+	"goToPage_CameraPictureVar": {
+		"name": "goToPage_CameraPictureVar",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "CameraPictureVar",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_CameraPictureVar-wm.NavigationVariable-1443149654664"
 	}
 }

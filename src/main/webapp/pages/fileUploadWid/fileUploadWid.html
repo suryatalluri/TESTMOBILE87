@@ -1,9 +1,9 @@
-<wm-page name="page1" data-ng-controller="fileUploadWidPageController">
+<wm-page data-ng-controller="fileUploadWidPageController" name="page1">
     <wm-left-panel content="leftnav" name="left_panel1"></wm-left-panel>
-    <wm-mobile-navbar title="FILE UPLOAD WID" name="mobile_navbar1" backbutton="false"></wm-mobile-navbar>
+    <wm-mobile-navbar name="mobile_navbar1" title="FILE UPLOAD WID" backbutton="false"></wm-mobile-navbar>
     <wm-content name="content1">
-        <wm-page-content name="page_content1" columnwidth="12">
-            <wm-fileupload name="fileupload1" multiple="true" operation="uploadFile" service="FileService"></wm-fileupload>
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-fileupload name="fileupload1" service="FileService" operation="uploadFile" multiple="true"></wm-fileupload>
         </wm-page-content>
     </wm-content>
 </wm-page>

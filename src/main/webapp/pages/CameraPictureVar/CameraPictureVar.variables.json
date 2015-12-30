@@ -1,1 +1,24 @@
-{}
+{
+  "takePicture" : {
+    "geolocationTimeout" : 5,
+    "saveToPhotoAlbum" : false,
+    "geolocationMaximumAge" : 3,
+    "startUpdate" : false,
+    "correctOrientation" : true,
+    "dataSet" : {
+      "imagePath" : "resources/images/imagelists/default-image.png"
+    },
+    "imageEncodingType" : "0",
+    "operation" : "captureImage",
+    "category" : "wm.DeviceVariable",
+    "vibrationtime" : 2,
+    "allowImageEdit" : false,
+    "geolocationHighAccuracy" : true,
+    "dataBinding" : { },
+    "_id" : "wm-takePicture-wm.DeviceVariable-1443149724998",
+    "name" : "takePicture",
+    "service" : "camera",
+    "owner" : "Page",
+    "imageQuality" : 80
+  }
+}

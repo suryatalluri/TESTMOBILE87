@@ -1,27 +1,28 @@
 {
-	"deviceInfo": {
-		"owner": "Page",
-		"dataSet": {
-			"connectionType": "NONE",
-			"deviceModel": "DEVICEMODEL",
-			"os": "DEVICEOS",
-			"osVersion": "X.X.X",
-			"deviceUUID": "DEVICEUUID"
-		},
-		"dataBinding": {},
-		"service": "device",
-		"operation": "getDeviceInfo",
-		"startUpdate": true,
-		"imageQuality": 80,
-		"imageEncodingType": "0",
-		"allowImageEdit": false,
-		"correctOrientation": true,
-		"saveToPhotoAlbum": false,
-		"geolocationHighAccuracy": true,
-		"geolocationMaximumAge": 3,
-		"geolocationTimeout": 5,
-		"vibrationtime": 2,
-		"category": "wm.DeviceVariable",
-		"_id": "wm-deviceInfo-wm.DeviceVariable-1443148077506"
-	}
+  "deviceInfo" : {
+    "geolocationTimeout" : 5,
+    "saveToPhotoAlbum" : false,
+    "geolocationMaximumAge" : 3,
+    "startUpdate" : true,
+    "correctOrientation" : true,
+    "dataSet" : {
+      "os" : "DEVICEOS",
+      "osVersion" : "X.X.X",
+      "deviceModel" : "DEVICEMODEL",
+      "connectionType" : "NONE",
+      "deviceUUID" : "DEVICEUUID"
+    },
+    "imageEncodingType" : "0",
+    "operation" : "getDeviceInfo",
+    "category" : "wm.DeviceVariable",
+    "vibrationtime" : 2,
+    "allowImageEdit" : false,
+    "geolocationHighAccuracy" : true,
+    "dataBinding" : { },
+    "_id" : "wm-deviceInfo-wm.DeviceVariable-1443148077506",
+    "name" : "deviceInfo",
+    "service" : "device",
+    "owner" : "Page",
+    "imageQuality" : 80
+  }
 }
